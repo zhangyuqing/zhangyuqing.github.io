@@ -47,7 +47,7 @@ blockquote cite {
 	display: block;
 	margin-top: 5px;
 }
- 
+
 blockquote cite:before {
 	content: "\2014 \2009";
 }
@@ -294,7 +294,7 @@ Full-Width Styles
   margin: 0 auto;
 }
 
-#forkme_banner {
+.header_buttons {
   display: inline;
   position: relative;
   top:0;
@@ -322,7 +322,7 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
-#project_title {
+.project_title {
   margin: 0;
   color: #fff;
   font-size: 42px;
@@ -330,7 +330,7 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
-#project_tagline {
+.project_tagline {
   color: #fff;
   font-size: 24px;
   font-weight: 300;

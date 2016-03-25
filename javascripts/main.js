@@ -1,1 +1,5 @@
-console.log('This would be the main JS file.');
+// render header and footer
+window.onload = function() {
+  render_header();
+  render_footer();
+};
