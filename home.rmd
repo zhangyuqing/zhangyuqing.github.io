@@ -1,0 +1,9 @@
+---
+title: "Yuqing Zhang"
+metaAlignment: center
+coverMeta: out
+date: "`r Sys.Date()`"
+staticPage: True
+---
+
+This is Yuqing's homepage. 

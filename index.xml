@@ -6,10 +6,48 @@
     <description>Recent content on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>ComBat-seq  Reference-batch ComBat Batch effect refers to non-biological variations in gene expression of samples generated under different conditions in microarray experiments. The existence of batch effect jeopardizes comparability of samples in different batches, causes difficulty in combining data from multiple batches for further analysis. Many methods have been used to adjust batch effect. ComBat uses empirical Bayes method on an L/S model that effectively adjusts the batch effect, and remains robust to outliers and small size batches.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/publications/</link>
+      <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/</guid>
+      <description>Journal Papers 2018  Zhang, Y., Bernau, C., Parmigiani, G., &amp;amp; Waldron, L. (2018). The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models. Biostatistics (Oxford, England). Zhang, Y., Jenkins, D. F., Manimaran, S., &amp;amp; Johnson, W. E. (2018). Alternative empirical Bayes models for adjusting for batch effects in genomic studies. BMC bioinformatics, 19(1), 262. Griffin, P. J., Zhang, Y., Johnson, W. E., &amp;amp; Kolaczyk, E.</description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>/software/</link>
+      <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/software/</guid>
+      <description>SimulatorZ Zhang Y, Bernau C and Waldron L (2014). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.4.0, http://bioconductor.org/packages/release/bioc/html/simulatorZ.html
+ Reference-batch ComBat Leek JT, Johnson WE, Parker HS, Fertig EJ, Jaffe AE, Storey JD, Zhang Y, Torres LC (2018). sva: Surrogate Variable Analysis. R package version 3.28.0.
+ </description>
+    </item>
+    
+    <item>
+      <title>Yuqing Zhang</title>
+      <link>/home/</link>
+      <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/home/</guid>
+      <description>This is Yuqing’s homepage.</description>
+    </item>
     
     <item>
       <title>DESCEND - Gene expression distribution deconvolution in scRNA-seq</title>
@@ -19,43 +57,6 @@
       <guid>/2018/10/descend/</guid>
       <description>Microarray and bulk RNA-seq data measure.
 Background knowledge  Goal of this paper  Methods behind DESCEND  Results Model evaluation  Case studies Effect of cell size on differential non-zero mean and fraction analysis  DESCEND improves accuracy of cell type identification, by selecting better highly variable genes      Take-home messages  When all across-cell differences are accounted for, Poisson distribution is sufficient to capture technical noise in UMI-based scRNA-seq counts.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/projects/</link>
-      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/</guid>
-      <description>A time-based model of altered circadian gene expression for Neurospora crassa. The circadian clock is a major regulator of gene expression in many organisms, and is able to drive important metabolic functions in response to cyclical environmental factors. Neurospora crassa has long served as a model organism to study the circadian clock, given that a high proportion of its genes are under circadian control and that phenotypic changes in response to the clock are easily observed.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>/publications/</link>
-      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/publications/</guid>
-      <description>Journal Papers 2018  Zhang, Y., Bernau, C., Parmigiani, G., &amp;amp; Waldron, L. (2018). The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models. Biostatistics (Oxford, England). Zhang, Y., Jenkins, D. F., Manimaran, S., &amp;amp; Johnson, W. E. (2018). Alternative empirical Bayes models for adjusting for batch effects in genomic studies. BMC bioinformatics, 19(1), 262. Griffin, P. J., Zhang, Y., Johnson, W. E., &amp;amp; Kolaczyk, E.</description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>/software/</link>
-      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/software/</guid>
-      <description>SimulatorZ Zhang Y, Bernau C and Waldron L (2014). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.4.0, http://bioconductor.org/packages/release/bioc/html/simulatorZ.html
-Reference-batch ComBat Leek JT, Johnson WE, Parker HS, Fertig EJ, Jaffe AE, Storey JD, Zhang Y, Torres LC (2018). sva: Surrogate Variable Analysis. R package version 3.28.0.</description>
-    </item>
-    
-    <item>
-      <title>Yuqing Zhang</title>
-      <link>/home/</link>
-      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/home/</guid>
-      <description>About Me As a doctoral student at Boston University, my interest lies in applying statistical and computational approaches in biological problems. Formerly trained at School of Mathematical Sciences at Peking University in the area of applied math, I am currently in an ambitious persuit of a balance between the abstract beauty of theoretical math and the practical applications which serves for the benefit of a large population.</description>
     </item>
     
   </channel>
