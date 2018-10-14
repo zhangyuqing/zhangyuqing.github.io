@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>About</title>
+      <link>/home/</link>
+      <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/home/</guid>
+      <description>This is Yuqing’s homepage.</description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>/projects/</link>
       <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
@@ -38,15 +47,6 @@
       <description>SimulatorZ Zhang Y, Bernau C and Waldron L (2014). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.4.0, http://bioconductor.org/packages/release/bioc/html/simulatorZ.html
  Reference-batch ComBat Leek JT, Johnson WE, Parker HS, Fertig EJ, Jaffe AE, Storey JD, Zhang Y, Torres LC (2018). sva: Surrogate Variable Analysis. R package version 3.28.0.
  </description>
-    </item>
-    
-    <item>
-      <title>Yuqing Zhang</title>
-      <link>/home/</link>
-      <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/home/</guid>
-      <description>This is Yuqing’s homepage.</description>
     </item>
     
     <item>

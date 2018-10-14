@@ -1,6 +1,6 @@
 ---
-title: "Yuqing Zhang"
-metaAlignment: center
+title: "About"
+metaAlignment: left
 coverMeta: out
 date: "`r Sys.Date()`"
 staticPage: True
