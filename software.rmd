@@ -8,7 +8,7 @@ staticPage: True
 
 ### SimulatorZ
 
-**Zhang Y**, Bernau C and Waldron L (2014). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.4.0, http://bioconductor.org/packages/release/bioc/html/simulatorZ.html
+**Zhang Y**, Bernau C, Waldron L (2018). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.15.1, https://github.com/zhangyuqing/simulatorZ.
 
 ### Reference-batch ComBat
 

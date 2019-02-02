@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stats Model on Stars &amp; Sea</title>
-    <link>https://zhangyuqing.github.io/tags/stats-model/</link>
+    <link>/tags/stats-model/</link>
     <description>Recent content in Stats Model on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://zhangyuqing.github.io/tags/stats-model/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/stats-model/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DESCEND - Gene expression distribution deconvolution in scRNA-seq</title>
-      <link>https://zhangyuqing.github.io/2018/10/descend/</link>
+      <link>/2018/10/descend/</link>
       <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyuqing.github.io/2018/10/descend/</guid>
+      <guid>/2018/10/descend/</guid>
       <description>Microarray and bulk RNA-seq data measure.
 Background knowledge  Goal of this paper  Methods behind DESCEND  Results Model evaluation  Case studies Effect of cell size on differential non-zero mean and fraction analysis  DESCEND improves accuracy of cell type identification, by selecting better highly variable genes      Take-home messages  When all across-cell differences are accounted for, Poisson distribution is sufficient to capture technical noise in UMI-based scRNA-seq counts.</description>
     </item>

@@ -3,78 +3,78 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zhangyuqing.github.io/home/</loc>
+    <loc>/software/</loc>
+    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/home/</loc>
     <lastmod>2018-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/projects/</loc>
+    <loc>/projects/</loc>
     <lastmod>2018-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/publications/</loc>
+    <loc>/publications/</loc>
     <lastmod>2018-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/software/</loc>
-    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zhangyuqing.github.io/2018/10/descend/</loc>
+    <loc>/2018/10/descend/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/archives/</loc>
+    <loc>/archives/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/tags/batch-effect/</loc>
+    <loc>/tags/batch-effect/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/tags/scrna-seq/</loc>
+    <loc>/categories/scrna-seq/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/categories/scrna-seq/</loc>
+    <loc>/tags/scrna-seq/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/</loc>
-    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/tags/stats-model/</loc>
+    <loc>/tags/stats-model/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://zhangyuqing.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
