@@ -13,9 +13,18 @@ The latest list can be found on my [Google Scholar](https://scholar.google.com/c
 
 #### 2018
 
-+ **Zhang, Y.**, Bernau, C., Parmigiani, G., & Waldron, L. (2018). The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models. Biostatistics (Oxford, England).
-+ **Zhang, Y.**, Jenkins, D. F., Manimaran, S., & Johnson, W. E. (2018). Alternative empirical Bayes models for adjusting for batch effects in genomic studies. BMC bioinformatics, 19(1), 262.
-+ Griffin, P. J., **Zhang, Y.**, Johnson, W. E., & Kolaczyk, E. D. (2018). Detection of multiple perturbations in multi-omics biological networks. Biometrics.
++ **Zhang, Y.**, Bernau, C., Parmigiani, G., & Waldron, L. (2018). The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models. *Biostatistics (Oxford, England)*
++ **Zhang, Y.**, Jenkins, D. F., Manimaran, S., & Johnson, W. E. (2018). Alternative empirical Bayes models for adjusting for batch effects in genomic studies. *BMC bioinformatics, 19(1), 262*
++ Griffin, P. J., **Zhang, Y.**, Johnson, W. E., & Kolaczyk, E. D. (2018). Detection of multiple perturbations in multi-omics biological networks. *Biometrics*
 + McQuerry, J. A. , Jenkins, D. F. , Yost, S. E. , **Zhang, Y.**, Schmolze, D., Johnson, W. E., Yuan, Y., & Bild, A.
 Pathway activity profiling of growth factor receptor network and stemness pathways differentiates
-metaplastic breast cancer histological subtypes. (under review in BMC Cancer)
+metaplastic breast cancer histological subtypes. *(under review in BMC Cancer)*
+
+
+
+### Conference Papers
+
+#### 2019
+
++ **Zhang, Y.**, Parmigiani, G., Johnson, W. E.. ComBat-Seq: batch correction algorithm for RNA-Seq count data. *(under review in JSM 2019, http://ww2.amstat.org/meetings/jsm/2019/)*
+

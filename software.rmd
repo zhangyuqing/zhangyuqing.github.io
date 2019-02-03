@@ -6,11 +6,13 @@ date: "`r Sys.Date()`"
 staticPage: True
 ---
 
-### SimulatorZ
+### R/Bioconductor packages
 
-**Zhang Y**, Bernau C, Waldron L (2018). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.15.1, https://github.com/zhangyuqing/simulatorZ.
+#### simulatorZ
 
-### Reference-batch ComBat
+**Zhang Y**, Bernau C, Waldron L (2018). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.16.0. https://bioconductor.org/packages/release/bioc/html/simulatorZ.html
 
-Leek JT, Johnson WE, Parker HS, Fertig EJ, Jaffe AE, Storey JD, **Zhang Y**, Torres LC (2018). sva: Surrogate Variable Analysis. R package version 3.28.0.
+#### reference-batch ComBat
+
+Leek JT, Johnson WE, Parker HS, Fertig EJ, Jaffe AE, Storey JD, **Zhang Y**, Torres LC (2019). sva: Surrogate Variable Analysis. R package version 3.30.1. https://bioconductor.org/packages/release/bioc/html/sva.html
 

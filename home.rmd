@@ -7,3 +7,36 @@ staticPage: True
 ---
 
 This is Yuqing's homepage. 
+
+
+
+### Education
+
+* **Boston University** (Boston, MA; Sep. 2015 -- present)
+  + Ph.D. Candidate in Bioinformatics (Jointly advised by W. Evan Johnson & Giovanni Parmigiani)
+* **Boston University** (Boston, MA; Sep. 2015 -- Sep. 2017)
+  + M.S. in Bioinformatics
+* **Peking University** (Beijing, China; Sep. 2011 -- July 2015)
+  + B.S. in Applied Mathematics (Probability and Statistics)
+  + Minor in Psychology
+
+
+### Experience
+
+* **Takeda Data Science Institute, Takeda Pharmaceuticals** (Cambridge, MA; June 2017 -- Aug. 2017)
+Bioinformatics Scientist Intern
+* **Search Engine Marketing, Baidu Inc.** (Beijing, China; June 2014 -- Sep. 2014)
+Data Analyst Intern 
+* **Biostatistics & Computational Biology, Dana-Farber Cancer Institute** (Boston, MA; May 2016 -- May 2018)
+Graduate Research Student
+* **Boston University** (Boston, MA; Sep. 2017 -- Dec. 2017)
+Teaching Assistant, BF527 Application in Bioinformatics (machine learning lecturer)
+
+
+### Skills
+
+* **Data Science**: Machine Learning, Deep Learning, Data Mining, Multivariate Statistical Analysis, High
+Dimensional Data Analysis, Hypothesis Testing, (Generalized) Linear Models, Bayesian Methods, Survival
+Analysis, Time Series Analysis 
+* **Programming**: R, Python, C, SQL, TensorFlow, MATLAB, Linux Shell Scripts, High-performance
+Computing (with Hadoop MapReduce), Data Structures and Algorithms, Git Version Control
