@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stars &amp; Sea</title>
-    <link>/</link>
+    <link>https://zhangyuqing.github.io/</link>
     <description>Recent content on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhangyuqing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Software</title>
-      <link>/software/</link>
-      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      <title>About</title>
+      <link>https://zhangyuqing.github.io/home/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/software/</guid>
+      <guid>https://zhangyuqing.github.io/home/</guid>
+      <description>This is Yuqing’s homepage.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://zhangyuqing.github.io/projects/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyuqing.github.io/projects/</guid>
+      <description>ComBat-seq  Reference-batch ComBat Batch effect refers to non-biological variations in gene expression of samples generated under different conditions in microarray experiments. The existence of batch effect jeopardizes comparability of samples in different batches, causes difficulty in combining data from multiple batches for further analysis. Many methods have been used to adjust batch effect. ComBat uses empirical Bayes method on an L/S model that effectively adjusts the batch effect, and remains robust to outliers and small size batches.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://zhangyuqing.github.io/publications/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyuqing.github.io/publications/</guid>
+      <description>Journal Papers 2018  Zhang, Y., Bernau, C., Parmigiani, G., &amp;amp; Waldron, L. (2018). The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models. Biostatistics (Oxford, England). Zhang, Y., Jenkins, D. F., Manimaran, S., &amp;amp; Johnson, W. E. (2018). Alternative empirical Bayes models for adjusting for batch effects in genomic studies. BMC bioinformatics, 19(1), 262. Griffin, P. J., Zhang, Y., Johnson, W. E., &amp;amp; Kolaczyk, E.</description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://zhangyuqing.github.io/software/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyuqing.github.io/software/</guid>
       <description>SimulatorZ Zhang Y, Bernau C, Waldron L (2018). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.15.1, https://github.com/zhangyuqing/simulatorZ.
  Reference-batch ComBat Leek JT, Johnson WE, Parker HS, Fertig EJ, Jaffe AE, Storey JD, Zhang Y, Torres LC (2018). sva: Surrogate Variable Analysis. R package version 3.28.0.
  </description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>/home/</link>
-      <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/home/</guid>
-      <description>This is Yuqing’s homepage.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/projects/</link>
-      <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/</guid>
-      <description>ComBat-seq  Reference-batch ComBat Batch effect refers to non-biological variations in gene expression of samples generated under different conditions in microarray experiments. The existence of batch effect jeopardizes comparability of samples in different batches, causes difficulty in combining data from multiple batches for further analysis. Many methods have been used to adjust batch effect. ComBat uses empirical Bayes method on an L/S model that effectively adjusts the batch effect, and remains robust to outliers and small size batches.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>/publications/</link>
-      <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/publications/</guid>
-      <description>Journal Papers 2018  Zhang, Y., Bernau, C., Parmigiani, G., &amp;amp; Waldron, L. (2018). The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models. Biostatistics (Oxford, England). Zhang, Y., Jenkins, D. F., Manimaran, S., &amp;amp; Johnson, W. E. (2018). Alternative empirical Bayes models for adjusting for batch effects in genomic studies. BMC bioinformatics, 19(1), 262. Griffin, P. J., Zhang, Y., Johnson, W. E., &amp;amp; Kolaczyk, E.</description>
-    </item>
-    
-    <item>
       <title>DESCEND - Gene expression distribution deconvolution in scRNA-seq</title>
-      <link>/2018/10/descend/</link>
+      <link>https://zhangyuqing.github.io/2018/10/descend/</link>
       <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/10/descend/</guid>
+      <guid>https://zhangyuqing.github.io/2018/10/descend/</guid>
       <description>Microarray and bulk RNA-seq data measure.
 Background knowledge  Goal of this paper  Methods behind DESCEND  Results Model evaluation  Case studies Effect of cell size on differential non-zero mean and fraction analysis  DESCEND improves accuracy of cell type identification, by selecting better highly variable genes      Take-home messages  When all across-cell differences are accounted for, Poisson distribution is sufficient to capture technical noise in UMI-based scRNA-seq counts.</description>
     </item>
