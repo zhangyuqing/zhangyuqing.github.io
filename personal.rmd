@@ -1,0 +1,16 @@
+---
+title: "Personal"
+metaAlignment: left
+coverMeta: out
+date: "`r Sys.Date()`"
+staticPage: True
+---
+
+My name, Yuqing (雨晴), is pronounced *y-oo-ching*. It means the sky clears up after rain. 
+
+I live mainly in Boston, but sometimes in Berkeley California too, where my husband, [Ronghang](http://ronghanghu.com), lives and works. My research and study take up most of my time. But whenever possible, I would gather and chat with my friends, or have a nice beer while watching a good movie. My lifelong favourite movie is [Cracks](https://en.wikipedia.org/wiki/Cracks_(film)). I'm a fun of J-pops, for example, [*Akane Sasu* by Aimer](https://www.youtube.com/watch?v=tKUC6vqC1kw); and popular Chinese ballads, some examples include [*An He Qiao* by Dongye Song (安和桥-宋冬野) ](https://www.youtube.com/watch?v=6DNek3U0W2Q) and [*Wu Wen* by Mao Buyi (无问-毛不易)](https://www.youtube.com/watch?v=ZCYqEeIW4WY&list=RDZCYqEeIW4WY&start_radio=1). I also love to keep a healthy lifestyle (except for the beer-drinking, of course). I get up around 7am daily, keep track of everything I eat, and walk to anywhere within walking distance as long as the weather allows, which sadly is often not the case in New England winters.  
+
+If I were to summarize my view of the world in one sentence, it would be that our abilities, hard-work and sense of duties determine the lower bound of our achievements, while passion and enthusiasm determine the upper. I value genuine enthusiasm in people. I don't have a specific role model, but I tend to look up to curious, highly energetic people, who would give all they have to achieve something they truly enjoy. I hope to live my life as one of them.
+
+You've come to my personal website and blog, where I write down the things I learn, fun projects I work on, events of my life and random thoughts.
+
