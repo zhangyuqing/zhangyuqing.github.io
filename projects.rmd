@@ -8,8 +8,8 @@ staticPage: True
 
 ### Completed
 
-* **Lung cancer classification from CT scan images using deep CNNs**   
-*2017 Data Science Bowl Kaggle Competition*
+* **Lung cancer classification from CT scan images using deep convolutional neural networks ** - *2017 Data Science Bowl Kaggle Competition*  
+[Project repo](https://onlinelibrary.wiley.com/doi/epdf/10.1111/biom.12893)    
     + Implemented U-Net with Python and Tensorflow according to literature for nodule segmentation
     + Developed deep convolutional neural networks for lung cancer classification
     + Applied batch normalization, drop-out layers, and tuned parameters to improve prediction accuracy
@@ -17,40 +17,43 @@ staticPage: True
     + Achieved performance comparable to top-50 out of nearly 2000 participating teams
 
 
-* **A multivariate Gaussian Network model for detection of multiple perturbations in gene regulartory networks**    
-*Griffin, P. J., Zhang, Y., Johnson, W. E., & Kolaczyk, E. D. (2018). Detection of multiple perturbations in multi‐omics biological networks. Biometrics. [online PDF](https://onlinelibrary.wiley.com/doi/epdf/10.1111/biom.12893)*
-    + Implemented U-Net with Python and Tensorflow according to literature for nodule segmentation
-    + Developed deep convolutional neural networks for lung cancer classification
-    + Applied batch normalization, drop-out layers, and tuned parameters to improve prediction accuracy
-    + Augmented training data by random cropping and merging the training set with images from public databases of CT scans
-    + Achieved performance comparable to top-50 out of nearly 2000 participating teams
+* **A multivariate Gaussian Network model for detection of multiple perturbations in gene regulartory networks**  
+[Published journal article](https://onlinelibrary.wiley.com/doi/epdf/10.1111/biom.12893)    
+    + Completed mathematical proofs of properties for a multivariate Gaussian Network model for detection of perturbations in gene regulatory networks
+    + Created simulations to evaluate the model in networks with a hub gene
+  
+
+* **Reference-batch ComBat: a linear model with empirical Bayes shrinkage for batch correction**     
+[Published journal article](https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-018-2263-6)
+<!--Batch effect refers to non-biological variations in gene expression of samples generated under different conditions in microarray experiments. The existence of batch effect jeopardizes comparability of samples in different batches, causes difficulty in combining data from multiple batches for further analysis. Many methods have been used to adjust batch effect. ComBat uses empirical Bayes method on an L/S model that effectively adjusts the batch effect, and remains robust to outliers and small size batches. This project intends to develop a tool based on ComBat that deals with such an issue, when we want to reserve information from one specific batch, and let all the other batches resemble it. This batch is referred to as the “reference batch”.-->
+    + Built an R software based on Empirical Bayes hierarchical linear regression for batch effect adjustment
 
 
-* ** Reference-batch ComBat: a linear model with empirical Bayes shrinkage for batch correction**   
-*Griffin, P. J., Zhang, Y., Johnson, W. E., & Kolaczyk, E. D. (2018). Detection of multiple perturbations in multi‐omics biological networks. Biometrics. [online PDF](https://onlinelibrary.wiley.com/doi/epdf/10.1111/biom.12893)*
-Batch effect refers to non-biological variations in gene expression of samples generated under different conditions in microarray experiments. The existence of batch effect jeopardizes comparability of samples in different batches, causes difficulty in combining data from multiple batches for further analysis. Many methods have been used to adjust batch effect. ComBat uses empirical Bayes method on an L/S model that effectively adjusts the batch effect, and remains robust to outliers and small size batches. This project intends to develop a tool based on ComBat that deals with such an issue, when we want to reserve information from one specific batch, and let all the other batches resemble it. This batch is referred to as the “reference batch”.
+* **Dataset heterogeneity in the validation of prediction models across studies**  
+[Published journal article](https://academic.oup.com/biostatistics/advance-article-abstract/doi/10.1093/biostatistics/kxy044/5092386?redirectedFrom=fulltext)
+<!--Previous study has shown decline in prediction accuracy of prognostic algorithms used across studies, which is regarded as an obstacle of implementing academically developed models in clinical use. We addressed three sources of heterogeneity between data sets than might account for the influence, including covariate shift, gene expression covariance and true simulation model. We designed methods to test each hypothesis.-->
+    + Evaluated prediction models across studies on bootstrap simulated independent genomic datasets
+    + Used Cox model and mixed-effect models to predict breast cancer patient survival
+    + Developed *simulatorZ* Bioconductor package
 
 
-#### Dataset heterogeneity in the validation of prediction models across studies
-
-Previous study has shown decline in prediction accuracy of prognostic algorithms used across studies, which is regarded as an obstacle of implementing academically developed models in clinical use. We addressed three sources of heterogeneity between data sets than might account for the influence, including covariate shift, gene expression covariance and true simulation model. We designed methods to test each hypothesis.
-
-
-* **Predicting Circadian Gene Expression in Neurospora crassa **
-*BU Bioinformatics Challenge Project*
+* **Predicting Circadian Gene Expression in Neurospora crassa ** - *BU Bioinformatics Challenge Project*
     + Manipulated and exported RNA-Seq datasets in SQL databases
     + Designed a pipeline in MATLAB collaboratively, using discrete difference approximation and EM optimization, to predict regulatory effect in the circadian clock gene network
 
-<!--
+
 ### Ongoing
 
-#### ComBat-Seq: batch correction algorithm for RNA-Seq count data
+* **ComBat-Seq: batch correction algorithm for RNA-Seq count data**  
+[Project repo](https://github.com/zhangyuqing/ComBat-seq)    
+    + Developed a negative binomial generalized linear model (GLM) for batch correction in count data
+    + Designed and implemented simulations to evaluate the performance of ComBat-Seq, compared it with other available methods
+    + Submitted as a contributed paper to JSM 2019
 
 
-
-#### Evaluating batch effect from a multi-study perspective
-
-
+* **Evaluating batch effect from a multi-study perspective**  
+[Project repo](https://github.com/zhangyuqing/multistudy_batcheffect)    
+    + Implemented ensemble methods to integrate multiple statistical learners, including lasso logistic regression, random forest, neural networks and SVM, for prediction on tuberculosis progression
 
 
 <!--

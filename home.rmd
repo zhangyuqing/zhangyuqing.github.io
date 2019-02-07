@@ -6,9 +6,9 @@ date: "`r Sys.Date()`"
 staticPage: True
 ---
 
-Hardcore scientist with excellent communication skills, fast learner and critical thinker, with dedicated, detail-oriented, analytical and organized characters. My passion is to use my expertise in statistical learning and programming to deliver game-changing knowledge from data. 
+Hardcore scientist with excellent communication skills, fast learner and critical thinker, dedicated, detail-oriented, analytical, and organized. My passion is to use my expertise in statistical learning and programming to deliver game-changing knowledge from data. 
 
-I received my B.S. in Applied Math from Peking University, after which I started graduate training at Boston University, working in [Computational Biomedicine (CBM)](http://www.bumc.bu.edu/compbiomed/), while jointly advised by [Evan](https://www.linkedin.com/in/w-evan-johnson-a234837a/) and [Giovanni](https://www.hsph.harvard.edu/giovanni-parmigiani/). Now I am about to enter (hopefully) the final year of my PhD. I worked with Baidu Search Engine Marketing Group as a data analyst intern during college, and later in 2017, with [Gene](https://www.linkedin.com/in/hyunjin-gene-shin-6456253/) at Takeda Pharmaceuticals as a summer data scientist. <!-- My work mainly involves 1) evaluating statistical learning models in genomic studies, especially in the presence of batch or study effects, and 2) developing mathematical models to address unwanted variation in integrating genomic data. -->
+I received B.S. in Applied Math from Peking University, after which I started graduate training at Boston University, working in [Computational Biomedicine (CBM)](http://www.bumc.bu.edu/compbiomed/), while jointly advised by [Evan](https://www.linkedin.com/in/w-evan-johnson-a234837a/) and [Giovanni](https://www.hsph.harvard.edu/giovanni-parmigiani/). Now I am about to enter (hopefully) the final year of my PhD. I worked with Baidu Search Engine Marketing Group as a data analyst intern during college, and later in 2017, with [Gene](https://www.linkedin.com/in/hyunjin-gene-shin-6456253/) at Takeda Pharmaceuticals as a summer data scientist. <!-- My work mainly involves 1) evaluating statistical learning models in genomic studies, especially in the presence of batch or study effects, and 2) developing mathematical models to address unwanted variation in integrating genomic data. -->
 
 
 ### Expertise & Interests
@@ -32,6 +32,8 @@ Minor in Psychology
 
 ### Experience
 
+* **Computational Biomedicine, Boston University** (Boston, MA; 2016/05 -- present)  
+Research Assistant
 * **Takeda Data Science Institute, Takeda Pharmaceuticals** (Cambridge, MA; 2017/06 -- 2017/08)      
 Bioinformatics Scientist Intern
 * **Search Engine Marketing, Baidu Inc.** (Beijing, China; 2014/06 -- 2014/09)    

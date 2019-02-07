@@ -6,7 +6,7 @@
     <description>Recent content on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangyuqing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,37 +14,37 @@
     <item>
       <title>About</title>
       <link>https://zhangyuqing.github.io/home/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://zhangyuqing.github.io/home/</guid>
-      <description>Hardcore scientist with excellent communication skills, fast learner and critical thinker, with dedicated, detail-oriented, analytical and organized characters. My passion is to use my expertise in statistical learning and programming to deliver game-changing knowledge from data.
-I received my B.S. in Applied Math from Peking University, after which I started graduate training at Boston University, working in Computational Biomedicine (CBM), while jointly advised by Evan and Giovanni. Now I am about to enter (hopefully) the final year of my PhD.</description>
+      <description>Hardcore scientist with excellent communication skills, fast learner and critical thinker, dedicated, detail-oriented, analytical, and organized. My passion is to use my expertise in statistical learning and programming to deliver game-changing knowledge from data.
+I received B.S. in Applied Math from Peking University, after which I started graduate training at Boston University, working in Computational Biomedicine (CBM), while jointly advised by Evan and Giovanni. Now I am about to enter (hopefully) the final year of my PhD.</description>
     </item>
     
     <item>
       <title>Personal</title>
       <link>https://zhangyuqing.github.io/personal/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://zhangyuqing.github.io/personal/</guid>
       <description>My name, Yuqing (雨晴), is pronounced y-oo-ching. It means the sky clears up after rain.
-I live mainly in Boston, but sometimes in Berkeley California too, where my husband, Ronghang, lives and works. My research and study take up most of my time. But whenever possible, I would gather and chat with my friends, or have a nice beer while watching a good movie. My lifelong favourite movie is Cracks. I’m a fun of J-pops, for example, Akane Sasu by Aimer; and popular Chinese ballads, some examples include An He Qiao by Dongye Song (安和桥-宋冬野) and Wu Wen by Mao Buyi (无问-毛不易).</description>
+I live mainly in Boston, but sometimes in Berkeley California too, where my husband, Ronghang, lives and works. I spend most of my time on research and study. But whenever possible, I would gather and chat with my friends, or have a nice beer while watching a good movie. My lifelong favourite movie is Cracks. I’m a fun of J-pops, for example, Akane Sasu by Aimer; and popular Chinese ballads, some examples include An He Qiao by Dongye Song (安和桥-宋冬野) and Wu Wen by Mao Buyi (无问-毛不易).</description>
     </item>
     
     <item>
       <title>Projects</title>
       <link>https://zhangyuqing.github.io/projects/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://zhangyuqing.github.io/projects/</guid>
-      <description>Completed  Lung cancer classification from CT scan images using deep CNNs
-2017 Data Science Bowl Kaggle Competition  Implemented U-Net with Python and Tensorflow according to literature for nodule segmentation Developed deep convolutional neural networks for lung cancer classification Applied batch normalization, drop-out layers, and tuned parameters to improve prediction accuracy Augmented training data by random cropping and merging the training set with images from public databases of CT scans Achieved performance comparable to top-50 out of nearly 2000 participating teams  A multivariate Gaussian Network model for detection of multiple perturbations in gene regulartory networks</description>
+      <description>Completed  Lung cancer classification from CT scan images using deep convolutional neural networks  - 2017 Data Science Bowl Kaggle Competition
+Project repo  Implemented U-Net with Python and Tensorflow according to literature for nodule segmentation Developed deep convolutional neural networks for lung cancer classification Applied batch normalization, drop-out layers, and tuned parameters to improve prediction accuracy Augmented training data by random cropping and merging the training set with images from public databases of CT scans Achieved performance comparable to top-50 out of nearly 2000 participating teams  A multivariate Gaussian Network model for detection of multiple perturbations in gene regulartory networks</description>
     </item>
     
     <item>
       <title>Publications</title>
       <link>https://zhangyuqing.github.io/publications/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://zhangyuqing.github.io/publications/</guid>
       <description>Journal Papers 2019  McQuerry, J. A. , Jenkins, D. F. , Yost, S. E. , Zhang, Y., Schmolze, D., Johnson, W. E., Yuan, Y., &amp;amp; Bild, A. Pathway activity profiling of growth factor receptor network and stemness pathways differentiates metaplastic breast cancer histological subtypes. (under review in BMC Cancer)   2018  Zhang, Y., Bernau, C., Parmigiani, G., &amp;amp; Waldron, L. (2018). The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models.</description>
@@ -53,7 +53,7 @@ I live mainly in Boston, but sometimes in Berkeley California too, where my husb
     <item>
       <title>Software</title>
       <link>https://zhangyuqing.github.io/software/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://zhangyuqing.github.io/software/</guid>
       <description>R/Bioconductor packages simulatorZ Zhang Y, Bernau C, Waldron L (2018). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.16.0.
