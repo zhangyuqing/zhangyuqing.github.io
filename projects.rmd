@@ -17,7 +17,7 @@ staticPage: True
     + Achieved performance comparable to top-50 out of nearly 2000 participating teams
 
 
-* **A multivariate Gaussian Network model for detection of multiple perturbations in gene regulartory networks**  
+* **A multivariate Gaussian Network for detection of multiple perturbations in gene regulartory networks**  
 [Published journal article](https://onlinelibrary.wiley.com/doi/epdf/10.1111/biom.12893)    
     + Completed mathematical proofs of properties for a multivariate Gaussian Network model for detection of perturbations in gene regulatory networks
     + Created simulations to evaluate the model in networks with a hub gene
