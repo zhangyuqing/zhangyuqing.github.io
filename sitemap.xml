@@ -3,83 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/personal/</loc>
+    <loc>https://zhangyuqing.github.io/personal/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/</loc>
+    <loc>https://zhangyuqing.github.io/projects/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/home/</loc>
+    <loc>https://zhangyuqing.github.io/publications/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publications/</loc>
-    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+    <loc>https://zhangyuqing.github.io/software/</loc>
+    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/software/</loc>
-    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+    <loc>https://zhangyuqing.github.io/home/</loc>
+    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2018/10/descend/</loc>
+    <loc>https://zhangyuqing.github.io/2018/10/descend/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/archives/</loc>
+    <loc>https://zhangyuqing.github.io/archives/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/batch-effect/</loc>
-    <lastmod>2018-10-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
+    <loc>https://zhangyuqing.github.io/tags/batch-effect/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/scrna-seq/</loc>
+    <loc>https://zhangyuqing.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhangyuqing.github.io/post/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/scrna-seq/</loc>
+    <loc>https://zhangyuqing.github.io/tags/scrna-seq/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://zhangyuqing.github.io/categories/scrna-seq/</loc>
+    <lastmod>2018-10-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhangyuqing.github.io/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/stats-model/</loc>
+    <loc>https://zhangyuqing.github.io/tags/stats-model/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://zhangyuqing.github.io/tags/</loc>
     <lastmod>2018-10-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
