@@ -32,5 +32,13 @@ I spend most of my time on research and study. But whenever possible, I would ga
 
 If I were to summarize my view of the world in one sentence, it would be that *our abilities, hard-work and sense of duties determine the lower bound of our achievements, while passion and enthusiasm determine the upper*. I value genuine enthusiasm in people. I don't have a specific role model, but I tend to look up to curious, highly energetic people, who would give all they have to achieve something they truly enjoy. I hope to live my life as one of them.
 
-You've come to my personal website and blog, where I write down the things I learn, fun projects I work on, events of my life and random thoughts.
+You've come to my personal website and blog, where I write down the things I learn, fun projects I work on, events of my life and random thoughts. 
+
+One last thing. The title of my website, **Stars and Sea (星辰大海)**, is quoted from Yuandong Tian, an accomplished research scientist in deep learning. In this [summary](https://zhuanlan.zhihu.com/p/45703402) of his PhD life , he said: 
+
+> 要习惯于两线作战，要有“进可攻”的长期课题，也要有“退可守”的短期课题，这样既减少对短期绩效评估的担心，又怀抱有长远的希望。然而要做到这一点，是需要大量的技术和细节支撑，一点一点地从严苛的现实世界中，从每天24小时里面，取回自己想要的东西。在理完纷乱的俗务之后，还能心向茫茫的星辰大海。
+
+A rough translation is that it is critical to keep in mind both the short-term and long-term goals, and do not lose yourself in the trivial, day-to-day grind, but forget the "stars and sea", or your ultimate pursuit. 
+
+
 
