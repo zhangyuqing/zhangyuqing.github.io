@@ -2,54 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stars &amp; Sea</title>
-    <link>https://zhangyuqing.github.io/</link>
+    <link>/</link>
     <description>Recent content on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://zhangyuqing.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Personal</title>
-      <link>https://zhangyuqing.github.io/personal/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      <link>/personal/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyuqing.github.io/personal/</guid>
+      <guid>/personal/</guid>
       <description>This is me in Hokkaido. Hello World!
   
 My name, Yuqing (雨晴), is pronounced y-oo-ching. It means the sky clears up after rain.
-I live mainly in Boston, but sometimes in Berkeley California too, where my husband, Ronghang, lives and works. We knew each other from high school, over 10 years ago.
-
- Ronghang and I, shot at Scituate Lighthouse in Boston suburb</description>
+You’ve come to my place to write down the things I learn, fun projects I work on, events of my life and random thoughts. The title of my website, Stars and Sea (星辰大海), is quoted from Yuandong Tian, an accomplished research scientist in deep learning.</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://zhangyuqing.github.io/projects/</link>
+      <link>/projects/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyuqing.github.io/projects/</guid>
+      <guid>/projects/</guid>
       <description>Completed  Lung cancer classification from CT scan images using deep convolutional neural networks  - 2017 Data Science Bowl Kaggle Competition
 Project repo  Implemented U-Net with Python and Tensorflow according to literature for nodule segmentation Developed deep convolutional neural networks for lung cancer classification Applied batch normalization, drop-out layers, and tuned parameters to improve prediction accuracy Augmented training data by random cropping and merging the training set with images from public databases of CT scans Achieved performance comparable to top-50 out of nearly 2000 participating teams  A multivariate Gaussian Network for detection of multiple perturbations in gene regulartory networks</description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>https://zhangyuqing.github.io/publications/</link>
+      <link>/publications/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyuqing.github.io/publications/</guid>
+      <guid>/publications/</guid>
       <description>Journal Papers 2019  McQuerry, J. A. , Jenkins, D. F. , Yost, S. E. , Zhang, Y., Schmolze, D., Johnson, W. E., Yuan, Y., &amp;amp; Bild, A. Pathway activity profiling of growth factor receptor network and stemness pathways differentiates metaplastic breast cancer histological subtypes. (under review in BMC Cancer)   2018  Zhang, Y., Bernau, C., Parmigiani, G., &amp;amp; Waldron, L. (2018). The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models.</description>
     </item>
     
     <item>
       <title>Software</title>
-      <link>https://zhangyuqing.github.io/software/</link>
+      <link>/software/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyuqing.github.io/software/</guid>
+      <guid>/software/</guid>
       <description>R/Bioconductor packages simulatorZ Zhang Y, Bernau C, Waldron L (2018). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.16.0.
  reference-batch ComBat Leek JT, Johnson WE, Parker HS, Fertig EJ, Jaffe AE, Storey JD, Zhang Y, Torres LC (2019). sva: Surrogate Variable Analysis. R package version 3.30.1.
   </description>
@@ -57,20 +55,20 @@ Project repo  Implemented U-Net with Python and Tensorflow according to literatu
     
     <item>
       <title>Welcome to Yuqing&#39;s Stars and Sea</title>
-      <link>https://zhangyuqing.github.io/home/</link>
+      <link>/home/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyuqing.github.io/home/</guid>
+      <guid>/home/</guid>
       <description>Hardcore scientist with excellent communication skills, fast learner and critical thinker, dedicated, detail-oriented, analytical, and organized. I am passionate about using my expertise in statistical learning and programming to deliver game-changing knowledge from data.
 I received B.S. in Applied Math from Peking University, after which I started graduate training at Boston University, working in Computational Biomedicine (CBM), while jointly advised by Evan and Giovanni. Now I am about to enter (hopefully) the final year of my PhD.</description>
     </item>
     
     <item>
       <title>DESCEND - Gene expression distribution deconvolution in scRNA-seq</title>
-      <link>https://zhangyuqing.github.io/2018/10/descend/</link>
+      <link>/2018/10/descend/</link>
       <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyuqing.github.io/2018/10/descend/</guid>
+      <guid>/2018/10/descend/</guid>
       <description>Microarray and bulk RNA-seq data measure.
 Background knowledge  Goal of this paper  Methods behind DESCEND  Results Model evaluation  Case studies Effect of cell size on differential non-zero mean and fraction analysis  DESCEND improves accuracy of cell type identification, by selecting better highly variable genes      Take-home messages  When all across-cell differences are accounted for, Poisson distribution is sufficient to capture technical noise in UMI-based scRNA-seq counts.</description>
     </item>
