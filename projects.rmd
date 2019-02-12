@@ -9,7 +9,7 @@ staticPage: True
 ### Completed
 
 * **Lung cancer classification from CT scan images using deep convolutional neural networks ** - *2017 Data Science Bowl Kaggle Competition*  
-[Project repo](https://onlinelibrary.wiley.com/doi/epdf/10.1111/biom.12893)    
+[Project report](https://www.overleaf.com/read/qgynxjvhgwxb)    
     + Implemented U-Net with Python and Tensorflow according to literature for nodule segmentation
     + Developed deep convolutional neural networks for lung cancer classification
     + Applied batch normalization, drop-out layers, and tuned parameters to improve prediction accuracy
