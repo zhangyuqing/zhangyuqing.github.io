@@ -6,15 +6,34 @@
     <description>Recent content on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>ML Summary Series (1) - Concepts</title>
+      <link>/2019/05/ml-summary-series-1---concepts/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/ml-summary-series-1---concepts/</guid>
+      <description>Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Yuqing&#39;s Stars and Sea</title>
+      <link>/home/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/home/</guid>
+      <description>Scientist with excellent communication skills, fast learner and critical thinker, dedicated, detail-oriented, analytical, and organized. I am passionate about using my expertise in statistical learning and programming to deliver game-changing knowledge from data.
+I received B.S. in Applied Math from Peking University, after which I started graduate training at Boston University, working in Computational Biomedicine (CBM), while jointly advised by Evan and Giovanni. Now I am about to enter (hopefully) the final year of my PhD.</description>
+    </item>
+    
+    <item>
       <title>Personal</title>
       <link>/personal/</link>
-      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/personal/</guid>
       <description>This is me in Hokkaido. Hello World!
@@ -51,26 +70,6 @@ Project report  Implemented U-Net with Python and Tensorflow according to litera
       <description>R/Bioconductor packages simulatorZ Zhang Y, Bernau C, Waldron L (2018). simulatorZ: Simulator for Collections of Independent Genomic Data Sets. R package version 1.16.0.
  reference-batch ComBat Leek JT, Johnson WE, Parker HS, Fertig EJ, Jaffe AE, Storey JD, Zhang Y, Torres LC (2019). sva: Surrogate Variable Analysis. R package version 3.30.1.
   </description>
-    </item>
-    
-    <item>
-      <title>Welcome to Yuqing&#39;s Stars and Sea</title>
-      <link>/home/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/home/</guid>
-      <description>Hardcore scientist with excellent communication skills, fast learner and critical thinker, dedicated, detail-oriented, analytical, and organized. I am passionate about using my expertise in statistical learning and programming to deliver game-changing knowledge from data.
-I received B.S. in Applied Math from Peking University, after which I started graduate training at Boston University, working in Computational Biomedicine (CBM), while jointly advised by Evan and Giovanni. Now I am about to enter (hopefully) the final year of my PhD.</description>
-    </item>
-    
-    <item>
-      <title>DESCEND - Gene expression distribution deconvolution in scRNA-seq</title>
-      <link>/2018/10/descend/</link>
-      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/10/descend/</guid>
-      <description>Microarray and bulk RNA-seq data measure.
-Background knowledge  Goal of this paper  Methods behind DESCEND  Results Model evaluation  Case studies Effect of cell size on differential non-zero mean and fraction analysis  DESCEND improves accuracy of cell type identification, by selecting better highly variable genes      Take-home messages  When all across-cell differences are accounted for, Poisson distribution is sufficient to capture technical noise in UMI-based scRNA-seq counts.</description>
     </item>
     
   </channel>

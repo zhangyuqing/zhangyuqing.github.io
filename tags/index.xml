@@ -6,35 +6,26 @@
     <description>Recent content in Tags on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Batch Effect</title>
-      <link>/tags/batch-effect/</link>
-      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/batch-effect/</guid>
+      <guid>/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Scrna Seq</title>
-      <link>/tags/scrna-seq/</link>
-      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
+      <title>Study Notes</title>
+      <link>/tags/study-notes/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/scrna-seq/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stats Model</title>
-      <link>/tags/stats-model/</link>
-      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/stats-model/</guid>
+      <guid>/tags/study-notes/</guid>
       <description></description>
     </item>
     

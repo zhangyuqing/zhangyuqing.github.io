@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.49.1 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Yuqing">
+<meta name="keywords" content="">
+<meta name="description" content="Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.">
+
+
+<meta property="og:description" content="Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ML Summaries (1) - Concepts">
+<meta name="twitter:title" content="ML Summaries (1) - Concepts">
+<meta property="og:url" content="/2019/05/ml-summaries-1---concepts/">
+<meta property="twitter:url" content="/2019/05/ml-summaries-1---concepts/">
+<meta property="og:site_name" content="Stars &amp; Sea">
+<meta property="og:description" content="Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.">
+<meta name="twitter:description" content="Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-05-02T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2019-05-02T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Toolbox">
+    
+  
+  
+    
+      <meta property="article:tag" content="Machine learning">
+    
+      <meta property="article:tag" content="Study notes">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="/personal_files/profile.jpg">
+  <meta property="twitter:image" content="/personal_files/profile.jpg">
+
+
+    <title>ML Summaries (1) - Concepts</title>
+
+    <link rel="icon" href="/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="/2019/05/ml-summaries-1---concepts/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-ghokqi7s7hdo9hisbdrskvy84wnaw5cskdnpd4vwowlvtuiy1ejozrtvpzds.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/">Stars &amp; Sea</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://zhangyuqing.github.io/">
+    
+    
+    
+      
+        <img class="header-picture" src="/personal_files/profile.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      
+        <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="/#about">
+          <img class="sidebar-profile-picture" src="/personal_files/profile.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Yuqing</h4>
+        
+          <h5 class="sidebar-profile-bio">PhD Candidate in Bioinformatics</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/zhangyuqing">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/yuqing-zhang-272612a4">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://scholar.google.com/citations?user=lE6puDgAAAAJ&amp;hl=en&amp;authuser=1">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-graduation-cap"></i>
+      
+      <span class="sidebar-button-desc">Google Scholar</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+      
+
+      <div id="main" data-behavior="5"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      ML Summaries (1) - Concepts
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-05-02T00:00:00Z">
+        
+  May 2, 2019
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="/categories/toolbox">Toolbox</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc. Both my thesis and my intern project with Takeda involve ensemble learning. After all these exposure, I thought ML should feel familar like an old friend by now.</p>
+<p>Yet when I talk about it occasionally, it doesn’t feel that way. Instead, I often find myself going back to textbooks or online blogs when I try to explain the rationale behind an algorithm. I started to realize that, though I’m familar with the contents, I have not yet had a chance to build them into a system in my knowledge base. This has motivated me to take a step back and organize my knowledge of ML into a series of summaries. And there’s another reason: I’ve always enjoyed making systematic summaries of the things I learn, even though it takes time. Somehow this process helps me find “inner peace”.</p>
+<p>There are literally countless of resources for machine learning theories. My notes are mainly re-processed from the online materials of <a href="http://cs229.stanford.edu/syllabus.html">Stanford CS229</a>. It is one of the best set of materials I’ve seen for someone (like me) with working knowledge of ML to dive deeper into the topics. It also comes with detailed mathematical derivation, combined with an approachable explanation of the intuition behind math, which I strongly appreciate.</p>
+<p>To follow the wise rule of “start simple”, I’ll start my summaries from basic concepts.</p>
+<div id="concept-pairs-in-ml" class="section level2">
+<h2>Concept pairs in ML</h2>
+<div id="supervised-unsupervised-learning" class="section level4">
+<h4>- Supervised / unsupervised learning</h4>
+<p><strong>Key: labeled or unlabeled data</strong></p>
+<ul>
+<li>2 types of machine learning tasks</li>
+<li>Supervised learning tasks
+<ul>
+<li>Work with labeled data - that is, each observation comes with a “value” for the target we hope to predict (called “ground truth”)</li>
+<li><em>Examples</em>: regression, classification</li>
+</ul></li>
+<li>Unsupervised learning
+<ul>
+<li>Work with data without associated “ground truth”</li>
+<li><em>Examples</em>: clustering, anormaly detection, dimension reduction (PCA, ICA), estimation problem involving latent variables (EM)</li>
+</ul></li>
+</ul>
+</div>
+<div id="regression-classification" class="section level4">
+<h4>- Regression / classification</h4>
+<p><strong>Key: continuous or discrete target variable</strong></p>
+<ul>
+<li>2 types of supervised learning problems</li>
+<li>Regression: continuous target</li>
+<li>Classification: discrete target</li>
+</ul>
+</div>
+<div id="parametric-non-parametric-model" class="section level4">
+<h4>- Parametric / non-parametric model</h4>
+<p><strong>Key: involves estimating a “fixed-sized parameter” or not</strong></p>
+<ul>
+<li>Not as simple as whether the model involves parameters that need to be learned</li>
+<li><strong>“fixed-sized parameter”</strong>: a parameter that no longer change after estimation (the training step).
+<ul>
+<li>Coefficients in linear or logistic regression are fixed-sized parameters - after learning an estimate of these coefficients, we treat the estimate as fixed, known numbers in prediction. The training set is no longer needed in the prediction step.</li>
+</ul></li>
+<li>Example for a non-parametric algorithm that involves parameter estimation - <strong>locally weighted linear regression</strong>
+<ul>
+<li>Same hypothesis and learning methods (gradient descent) as linear regression</li>
+<li>Associate each training example with a weight parameter
+<ul>
+<li>Cost function for gradient descent: <span class="math inline">\(J(w, \theta) = w^{(i)}(y^{(i)}-\theta^Tx^{(i)})^2\)</span></li>
+<li>Weight: <span class="math inline">\(w^{(i)}=\exp(-\frac{(x^{(i)} - x)^2}{2\tau^2})\)</span>, in which <span class="math inline">\(x\)</span> is the test sample to be predicted. This weight is larger for training examples that are close to the test sample <span class="math inline">\(x\)</span>.</li>
+</ul></li>
+<li>The weight parameter <span class="math inline">\(w^{(i)}\)</span> changes for different test samples. Also, the entire training set is needed at prediction step. Therefore, locally weighted linear regression is a non-parametric model.</li>
+</ul></li>
+</ul>
+</div>
+<div id="generative-discriminative-models" class="section level4">
+<h4>- Generative / discriminative models</h4>
+<p><strong>Key: P(X|Y) / P(Y|X)</strong></p>
+<ul>
+<li>Discriminative models: look for a mapping from predictors <span class="math inline">\(X\)</span> to target <span class="math inline">\(Y\)</span>. In other words, it tries to model <span class="math inline">\(P(Y|X)\)</span></li>
+<li>Generative models: aims to describe the distribution of input data given the labels (<span class="math inline">\(P(X|Y)\)</span>)</li>
+</ul>
+</div>
+<div id="mle-map-estimates" class="section level4">
+<h4>- MLE / MAP estimates</h4>
+<p><strong>Key: Frequentist VS Bayesian, treat parameters as unknown numbers or random variables</strong></p>
+<ul>
+<li>Estimation methods which take different views of the model parameters</li>
+<li>MLE - maximum likelihood estimation, takes a frequentist view, and see parameters as fixed scalars (numbers), only that their values are unknown and need to be inferred from the data</li>
+<li>MAP - maximum a posterior estimation, takes the Bayesian view which treats parameters as random variables. It specifies a distribution over the parameters which reflects prior knowledge/belief of the parameters (prior distributions), then adjust the distribution based on data (posterior distribution)</li>
+</ul>
+</div>
+<div id="l1-vs-l2-regularization" class="section level4">
+<h4>- L1 vs L2 regularization</h4>
+<p><strong>Key: sparsity </strong></p>
+<ul>
+<li>Regularization:
+<ul>
+<li>Goal: reduce the complexity of models and consequently, reduce the risk of overfitting</li>
+<li>Reduce the effect size of model parameters, by applying a panelty to parameters in optimization during training</li>
+</ul></li>
+<li>Apply to different <em>norms</em> of parameters, leading to different degree of sparsity in coefficients:
+<ul>
+<li>L1: panelize <span class="math inline">\(|\theta|\)</span> - shrink some parameters to zero</li>
+<li>L2: panelize <span class="math inline">\(\theta^2\)</span> - size of parameters are shrinked, but none are reduced to zero</li>
+</ul></li>
+<li>Why L1 panelty shrinks parameters to zero but L2 panelty does not? <img src="" height="50"></li>
+</ul>
+</div>
+<div id="under-fitting-over-fitting" class="section level4">
+<h4>- Under-fitting / over-fitting</h4>
+<p><strong>Key: decomposition of generalization error of a model (bias-variance tradeoff)</strong></p>
+<ul>
+<li>Assumption of learning algorithms: training and test data are <strong>independent, and identically distributed (i.i.d.)</strong></li>
+<li>Generalization error: (in contrary to training error) the error on data not used in training, but come from the same distribution as the training data.
+<ul>
+<li>Since we make the assumptions that training and test data are i.i.d., the model’s generalization error is usually evaluated as the error on test set.</li>
+</ul></li>
+<li>Bias and variance are two reasons that can lead to high generalization error. In fact, it can be shown that <span class="math display">\[ generalization~error = bias + variance + inreducible~noise\]</span> The next post will focus on bias-vairance tradeoff with a little contents of VC dimensions, where I will further explain this decomposition.</li>
+<li>Underfitting:
+<ul>
+<li>Model has high bias</li>
+<li>Achieves poor performance even on training set; the model fails to capture the predictor-response association</li>
+<li>Methods to address: increase model complexity</li>
+</ul></li>
+<li>Overfitting:
+<ul>
+<li>Model has high variance</li>
+<li>Achieves good training performance but poor test set performance; the model fits too well on training data and fails to generalize to other data</li>
+<li>Methods to address: reduce model complexity (regularization) or add more training data</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/tags/machine-learning/">Machine learning</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/study-notes/">Study notes</a>
+
+                  </div>
+                
+              
+            
+            
+              <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2019/05/ml-summaries-1---concepts/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2019/05/ml-summaries-1---concepts/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/05/ml-summaries-1---concepts/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/05/ml-summaries-1---concepts/">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+              
+                
+                  <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+                
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 Yuqing. All Rights Reserved
+  </span>
+</footer>
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    
+    
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2019/05/ml-summaries-1---concepts/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2019/05/ml-summaries-1---concepts/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/05/ml-summaries-1---concepts/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/05/ml-summaries-1---concepts/">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2019%2F05%2Fml-summaries-1---concepts%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2019%2F05%2Fml-summaries-1---concepts%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2019%2F05%2Fml-summaries-1---concepts%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2019%2F05%2Fml-summaries-1---concepts%2F">
+          <i class="fa fa-weixin"></i><span>Share on WeChat</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="/personal_files/profile.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Yuqing</h4>
+    
+      <div id="about-card-bio">PhD Candidate in Bioinformatics</div>
+    
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Boston &amp; SF Bay Area
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2019/05/ml-summaries-1---concepts/">
+                <h3 class="media-heading">ML Summaries (1) - Concepts</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         1 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('/images/cover.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-p6llwctmalu8ncocgo5upocbylyeicglbexgxyreo826oslkc4fbyk7izxvf.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/2019\/05\/ml-summaries-1---concepts\/';
+          
+            this.page.identifier = '\/2019\/05\/ml-summaries-1---concepts\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'zhangyuqing-github-io';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
