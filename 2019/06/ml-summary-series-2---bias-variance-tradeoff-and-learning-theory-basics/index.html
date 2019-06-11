@@ -8,25 +8,25 @@
 <meta name="generator" content="Hugo 0.49.1 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Yuqing">
 <meta name="keywords" content="">
-<meta name="description" content="Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.">
+<meta name="description" content="We are all familiar with the workflow of supervised learning: fit models on training data, and make predictions on the test set. But why should performance of models in the training set tell us anything about that in the test set? Is model performance always generalizable to new data? Learning theory aims to address these questions under a general, abstract formulation of the supervised learning problem, without specifying details like the type of model or the source of data.">
 
 
-<meta property="og:description" content="Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.">
+<meta property="og:description" content="We are all familiar with the workflow of supervised learning: fit models on training data, and make predictions on the test set. But why should performance of models in the training set tell us anything about that in the test set? Is model performance always generalizable to new data? Learning theory aims to address these questions under a general, abstract formulation of the supervised learning problem, without specifying details like the type of model or the source of data.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ML Summary Series (1) - Concepts">
-<meta name="twitter:title" content="ML Summary Series (1) - Concepts">
-<meta property="og:url" content="/2019/05/ml-summary-series-1---concepts/">
-<meta property="twitter:url" content="/2019/05/ml-summary-series-1---concepts/">
+<meta property="og:title" content="ML Summary Series (2) - Bias-variance tradeoff and learning theory basics">
+<meta name="twitter:title" content="ML Summary Series (2) - Bias-variance tradeoff and learning theory basics">
+<meta property="og:url" content="/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
+<meta property="twitter:url" content="/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
 <meta property="og:site_name" content="Stars &amp; Sea">
-<meta property="og:description" content="Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.">
-<meta name="twitter:description" content="Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.">
+<meta property="og:description" content="We are all familiar with the workflow of supervised learning: fit models on training data, and make predictions on the test set. But why should performance of models in the training set tell us anything about that in the test set? Is model performance always generalizable to new data? Learning theory aims to address these questions under a general, abstract formulation of the supervised learning problem, without specifying details like the type of model or the source of data.">
+<meta name="twitter:description" content="We are all familiar with the workflow of supervised learning: fit models on training data, and make predictions on the test set. But why should performance of models in the training set tell us anything about that in the test set? Is model performance always generalizable to new data? Learning theory aims to address these questions under a general, abstract formulation of the supervised learning problem, without specifying details like the type of model or the source of data.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-05-02T00:00:00">
+    <meta property="article:published_time" content="2019-06-10T00:00:00">
   
   
-    <meta property="article:modified_time" content="2019-05-02T00:00:00">
+    <meta property="article:modified_time" content="2019-06-10T00:00:00">
   
   
   
@@ -59,14 +59,14 @@
   <meta property="twitter:image" content="/personal_files/profile.jpg">
 
 
-    <title>ML Summary Series (1) - Concepts</title>
+    <title>ML Summary Series (2) - Bias-variance tradeoff and learning theory basics</title>
 
     <link rel="icon" href="/favicon.png">
     
 
     
 
-    <link rel="canonical" href="/2019/05/ml-summary-series-1---concepts/">
+    <link rel="canonical" href="/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -218,15 +218,15 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      ML Summary Series (1) - Concepts
+      ML Summary Series (2) - Bias-variance tradeoff and learning theory basics
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-05-02T00:00:00Z">
+      <time itemprop="datePublished" datetime="2019-06-10T00:00:00Z">
         
-  May 2, 2019
+  June 10, 2019
 
       </time>
     
@@ -245,143 +245,33 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc. Both my thesis and my intern project with Takeda involve ensemble learning. After all these exposure, I thought ML should feel familar like an old friend by now.</p>
-<p>Yet when I talk about it occasionally, it doesn’t feel that way. Instead, I often find myself going back to textbooks or online blogs when I try to explain the rationale behind an algorithm. I started to realize that, though I’m familar with the contents, I have not yet had a chance to build them into a system in my knowledge base. This has motivated me to take a step back and organize my knowledge of ML into a series of summaries. And there’s another reason: I’ve always enjoyed making systematic summaries of the things I learn, even though it takes time. Somehow this process helps me find “inner peace”.</p>
-<p>There are literally countless of resources for machine learning theories. My notes are mainly re-processed from the online materials of <a href="http://cs229.stanford.edu/syllabus.html">Stanford CS229</a>. It is one of the best set of materials I’ve seen for someone (like me) with working knowledge of ML to dive deeper into the topics. It comes with detailed mathematical derivation, combined with an approachable explanation of the intuition behind math, which I strongly appreciate.</p>
-<p>To follow the wise rule of “start simple”, I’ll start my summaries from basic concepts.</p>
-<div id="concept-pairs-in-ml" class="section level2">
-<h2>Concept pairs in ML</h2>
-<div id="supervised-unsupervised-learning" class="section level4">
-<h4>- Supervised / unsupervised learning</h4>
-<p><strong>Key: labeled or unlabeled data</strong></p>
+              <p>We are all familiar with the workflow of supervised learning: fit models on training data, and make predictions on the test set. But why should performance of models in the training set tell us anything about that in the test set? Is model performance always generalizable to new data? Learning theory aims to address these questions under a general, abstract formulation of the supervised learning problem, without specifying details like the type of model or the source of data.</p>
+<div id="bias-variance-tradeoff" class="section level3">
+<h3>Bias-variance tradeoff</h3>
+<p>Before diving into the abstract learning theory, we start by a simple example of curve fitting. Suppose our data points (which is also called “examples”) fall on a 2-dimensional plain [Figure 1]. From this visualization, we see that <span class="math inline">\(y\)</span> may be associated with <span class="math inline">\(x\)</span>, and we could potentially use <span class="math inline">\(x\)</span> to predict <span class="math inline">\(y\)</span>. We use <span class="math inline">\(f\)</span> to denote the true association between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>: <span class="math inline">\(y=f(x)+\varepsilon\)</span>. Note that in real data, there is always going to be some level of noise in <span class="math inline">\(y\)</span>, and therefore, <span class="math inline">\(y\)</span> will not follow the trend of <span class="math inline">\(y=f(x)\)</span> exactly. So, although <span class="math inline">\(f(x)\)</span> is a scalar, we treat <span class="math inline">\(y\)</span> as a random variable with the compoenent of a normal distributed noise <span class="math inline">\(\varepsilon \sim N(0, \sigma^2)\)</span> to reflect the noise.</p>
+<p>When a machine learning model comes in, it tries to learn an approximate of the true association, <span class="math inline">\(\hat{f}\)</span>. Then, when we apply the trained model on new data <span class="math inline">\(x&#39;\)</span> with the true label <span class="math inline">\(y&#39;\)</span> unknown, the apporximate is used to calculate the prediction: <span class="math inline">\(\hat{y}&#39; = \hat{f}(x&#39;)\)</span>. Now, suppose we use mean-squared-error (MSE) to measure the performance of the model. It can be derived that the MSE on new data can be decomposed into three components (which is the so-called “bias-variance tradeoff”):</p>
+<p>[Insert figure]</p>
+<p>Note that in the above decomposition, we made 2 assumptions: + Data in the training and the test set need to come from the same distribution. \ In other words, if we collect data from a data pool to train the model, where the true assocation is <span class="math inline">\(f\)</span>, then the new data need to be from the same pool with the same association. Of course, if the true association for new data is actually <span class="math inline">\(g\)</span>, which is inrelevant of <span class="math inline">\(f\)</span>, then we are very likely not going to make a good predction. + All examples should be independent. \ This is an assumption made by many classic models, and reflects the fact that the underlying association should be invariant of the data collected. If some examples in the data pool are correlated but some are not, then the association trained on correlated examples will be different from that on the uncorrelated ones. To sum up, in order to make meaningful predictions, we assume that training and test data are independent and identically distributed (i.i.d.).</p>
+<p>Under these two assumptions, we can now make sense of the derivation. (2) to (3) comes from the assumption of identical distribution, meaning that the true label of the new example <span class="math inline">\(y&#39; = f(x&#39;) + \varepsilon&#39;, \varepsilon&#39; \sim N(0, \sigma^2)\)</span>. After expanding the squared term from (3) to (5), we use the independent assumption to get (6). Note that in this formation, x and f(x) are scalars, but <span class="math inline">\(\hat{f}\)</span> depends on the entire training set, including the noise in the training data. Therefore, both <span class="math inline">\(\hat{f}\)</span> and the prediction values <span class="math inline">\(\hat{f}(x&#39;)\)</span> should be seen as random variables. Because the noise in test data, <span class="math inline">\(\varepsilon&#39;\)</span>, and the trained model, <span class="math inline">\(\hat{f}\)</span>, are independent, the interaction term in (5), <span class="math inline">\(2E(\varepsilon&#39;(f(x&#39;) - \hat{f}(x&#39;)))\)</span>, equals 0. Finally, we use the formula for variance of any random variable to derive (7) from (6): <span class="math inline">\(var(X) = E(X^2) - (EX)^2\)</span>. The decomposition is derived with mean-squared-error measure in curve fitting, but it also generalizes to other models.</p>
+<p>Generalization error, a measure for prediction performance on unseen data. This can be better illustrated with a simple curve fitting example. Suppose we want to use x to predict y for data points in [Figure 1]. Each point represents one example, with values of x and y. We use a mapping f to represent the target association. It is often the case in reality that data will not follow exactly on the trend defined by f, and there will always be some level of noise, large or small. Therefore, both y and x are random variables, and the target association is in the form <span class="math inline">\(y=f(x) + \varepsilon\)</span>, where <span class="math inline">\(\varepsilon∼N(0,σ^2)\)</span> is a random variable representing the noise.</p>
+</div>
+<div id="vc-dimension" class="section level3">
+<h3>VC dimension</h3>
+</div>
+<div id="conclusions" class="section level3">
+<h3>Conclusions</h3>
+<p>I would close this post with a summary:</p>
 <ul>
-<li>2 types of machine learning tasks</li>
-<li>Supervised learning tasks
+<li>Assumptions for data in supervised learning: training and test data are i.i.d.</li>
+<li>Bias-variance tradeoff
 <ul>
-<li>Work with labeled data - that is, each observation comes with a “value” for the target we hope to predict (called “ground truth”)</li>
-<li><em>Examples</em>: regression, classification</li>
-</ul></li>
-<li>Unsupervised learning
-<ul>
-<li>Work with unlabeled data - data without associated “ground truth”</li>
-<li><em>Examples</em>: clustering, anormaly detection, dimension reduction (PCA, ICA), estimation problem involving latent variables (EM)</li>
+<li>Generalization error: prediction error of trained model on unseen data</li>
 </ul></li>
 </ul>
-</div>
-<div id="regression-classification" class="section level4">
-<h4>- Regression / classification</h4>
-<p><strong>Key: continuous or discrete target variable</strong></p>
+
 <ul>
-<li>2 types of supervised learning problems</li>
-<li>Regression: continuous target</li>
-<li>Classification: discrete target</li>
+<li>VC dimensions</li>
 </ul>
-</div>
-<div id="generative-discriminative-models" class="section level4">
-<h4>- Generative / discriminative models</h4>
-<p><strong>Key: P(X|Y) / P(Y|X)</strong></p>
-<ul>
-<li>Discriminative models - P(Y|X)
-<ul>
-<li>Directly look for a mapping from predictors <span class="math inline">\(X\)</span> to target <span class="math inline">\(Y\)</span></li>
-<li><em>Examples</em>: logistic regression, SVM, decision tree</li>
-</ul></li>
-<li>Generative models - P(X|Y)
-<ul>
-<li>Aims to describe the distribution of input data given the labels</li>
-<li><em>Examples</em>: Naive Bayes, mixture of Gaussians, HMM</li>
-</ul></li>
-</ul>
-</div>
-<div id="mle-map-estimates" class="section level4">
-<h4>- MLE / MAP estimates</h4>
-<p><strong>Key: Frequentist VS Bayesian, treat parameters as unknown numbers or random variables</strong></p>
-<ul>
-<li>Estimation: a statistical term for evaluating the value of a parameter based on data</li>
-<li>Both are estimation methods which take different views of the model parameters</li>
-<li>MLE - maximum likelihood estimation
-<ul>
-<li>Frequentist view</li>
-<li>Sees parameters as fixed scalars (numbers), only that their values are unknown and need to be inferred from the data</li>
-</ul></li>
-<li>MAP - maximum a posterior estimation
-<ul>
-<li>Bayesian view</li>
-<li>Treats parameters as random variables. It specifies a distribution over the parameters which reflects prior knowledge/belief of the parameters (prior distributions), then adjust the distribution based on data (posterior distribution)</li>
-</ul></li>
-</ul>
-</div>
-<div id="parametric-non-parametric-models" class="section level4">
-<h4>- Parametric / non-parametric models</h4>
-<p><strong>Key: involves estimating a “fixed-sized parameter” or not</strong></p>
-<ul>
-<li>Not as simple as whether the model involves parameters that need to be learned</li>
-<li><strong>“fixed-sized parameter”</strong>: a parameter that no longer change after estimation (the training step).
-<ul>
-<li>Coefficients in linear or logistic regression are fixed-sized parameters - after learning an estimate of these coefficients, we treat the estimate as fixed, known numbers in prediction. The training set is no longer needed in the prediction step.</li>
-</ul></li>
-<li>Example for a non-parametric algorithm that involves parameter estimation - <strong>locally weighted linear regression</strong>
-<ul>
-<li>Same hypothesis and learning methods (gradient descent) as linear regression</li>
-<li>Associate each training example with a weight parameter
-<ul>
-<li>Cost function for gradient descent: <span class="math inline">\(J(w, \theta) = w^{(i)}(y^{(i)}-\theta^Tx^{(i)})^2\)</span></li>
-<li>Weight: <span class="math inline">\(w^{(i)}=\exp(-\frac{(x^{(i)} - x)^2}{2\tau^2})\)</span>, in which <span class="math inline">\(x\)</span> is the test sample to be predicted. This weight is larger for training examples that are close to the test sample <span class="math inline">\(x\)</span>.</li>
-</ul></li>
-<li>The weight parameter <span class="math inline">\(w^{(i)}\)</span> changes for different test samples. Also, the entire training set is needed at prediction step. Therefore, locally weighted linear regression is a non-parametric model.</li>
-</ul></li>
-</ul>
-</div>
-<div id="l1-vs-l2-regularization" class="section level4">
-<h4>- L1 vs L2 regularization</h4>
-<p><strong>Key: norm used &amp; level of sparsity </strong></p>
-<ul>
-<li>Regularization:
-<ul>
-<li>Goal: reduce the complexity of models and consequently, reduce the risk of overfitting</li>
-<li>Reduce the effect size of model parameters, by applying a panelty to parameters in optimization during training</li>
-</ul></li>
-<li>Apply to different <em>norms</em> of parameters, leading to different degree of sparsity in coefficients:
-<ul>
-<li>L1: panelize <span class="math inline">\(|\theta|\)</span> - most of the time, shrink some parameters to zero</li>
-<li>L2: panelize <span class="math inline">\(\theta^2\)</span> - size of parameters are shrinked, but most of the time, none are reduced to zero</li>
-</ul></li>
-<li>Why L1 regularization shrinks parameters to zero but L2 does not? <img src="/post/2019-05-02/regularizations.jpg" height="200" class="center"></li>
-</ul>
-<p>(image is grabbed from <a href="https://images.app.goo.gl/9zF622S92FTBV6zb9">here</a>)</p>
-<p>Strict theoretical derivation is complicated, but we can use a simple example to understand the intuition. Think of a simple case where we train a linear regression with only 2 parameters: <span class="math inline">\(y=w_1x_1 + w_2x_2 + \varepsilon\)</span>. Denote <span class="math inline">\(w = (w_1, w_2)^T\)</span>. Using the least square method, and adding regularization, the objective function we hope to minimize is</p>
-<p><span class="math display">\[min_{w}L(w) + \lambda||w|| = min_{h \geq 0}min_{w, ||w||=h} L(w) + \lambda h\]</span> where <span class="math inline">\(L(w)\)</span> is the sum of squared error cost function - a quadratic function with regard to parameters <span class="math inline">\(w_1\)</span> and <span class="math inline">\(w_2\)</span>. <span class="math inline">\(||*||\)</span> represents the norm, and can be L1 or L2.</p>
-<p>The above equation can be translated into the following process: we first constrain the norm of <span class="math inline">\(w\)</span> as <span class="math inline">\(h\)</span>, and find the minimum of the cost function under the constraint; then we minimize it further with regard to <span class="math inline">\(h\)</span>, which results in the objective function of the regularized least square method.</p>
-<p>Constraining <span class="math inline">\(||w||=h\)</span> means that, for any fixed <span class="math inline">\(h\)</span>, in the parameter space for <span class="math inline">\(w_1, w_2\)</span>, these two parameters can only fall on the lines specified by <span class="math inline">\(||w||=h\)</span>. If we use L1 norm, <span class="math inline">\(||w||=|w_1| + |w_2| = h\)</span> is diamond-shaped (red); if using L2 norm, <span class="math inline">\(||w||^2= w_1^2 + w_2^2 = h^2\)</span> is a circle (blue).</p>
-<p>In the next step, we hope to find the minimum value for cost function <span class="math inline">\(L\)</span> given the constraint, i.e. on the lines specified by function <span class="math inline">\(||w||=h\)</span>. <span class="math inline">\(L\)</span>, as we mentioned, is a quadratic function with respect to 2 parameters. It corresponds to a elliptic surface in 3-dimensional space. Finding the minimum then equivalents to looking through the contours of the elliptic surface (the contours are the eclipcses in the image), and see where they intersect with the curve of <span class="math inline">\(||w||=h\)</span>.</p>
-<p>Using L1 norm, it’s more likely that the intersection will happen at the corners (where one of the dimension <span class="math inline">\(w_1\)</span> or <span class="math inline">\(w_2\)</span> is 0), than at the edges. If this is not intuitive for you, think of a even simpler case where the contours as circles. The contours will only intersect at edges if the center of the circle is in the shadowed area (image below). When extending the picture to infinity, the shadowed area is just two small stripes on a big canvas. So the probability of that happening is quite small.</p>
-<p><img src="/post/2019-05-02/measure_zero_set.png" height="200" class="center"></p>
-<p>On the other hand, when using the L2 norm, intersecting at places where one dimension is 0 is highly unlikely compared to when both <span class="math inline">\(w_1\)</span> and <span class="math inline">\(w_2\)</span> are not zeros.</p>
-</div>
-<div id="under-fitting-over-fitting" class="section level4">
-<h4>- Under-fitting / over-fitting</h4>
-<p><strong>Key: decomposition of generalization error of a model (bias-variance tradeoff)</strong></p>
-<ul>
-<li>Assumption of learning algorithms: training and test data are <strong>independent, and identically distributed (i.i.d.)</strong></li>
-<li>Generalization error: (in contrary to training error) the error on data not used in training, but come from the same distribution as the training data.
-<ul>
-<li>Since we make the assumption that training and test data are i.i.d., the model’s generalization error is usually evaluated as the error on test set.</li>
-</ul></li>
-<li>Bias and variance are two reasons that can lead to high generalization error. In fact, it can be shown that <span class="math display">\[ generalization~error = bias + variance + inreducible~noise\]</span> The next post will focus on bias-vairance tradeoff, where I will further explain this decomposition.</li>
-<li>Underfitting:
-<ul>
-<li>Model has high bias</li>
-<li>Achieves poor performance even on training set; the model fails to capture the predictor-response association</li>
-<li>Methods to address: increase model complexity</li>
-</ul></li>
-<li>Overfitting:
-<ul>
-<li>Model has high variance</li>
-<li>Achieves good training performance but poor test set performance; the model fits too well on training data and fails to generalize to other data</li>
-<li>Methods to address: reduce model complexity (regularization) or add more training data</li>
-</ul></li>
-</ul>
-</div>
 </div>
 
               
@@ -411,7 +301,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/05/ml-summary-series-1---concepts/" data-tooltip="ML Summary Series (1) - Concepts">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -419,7 +309,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/06/ml-summary-series-2---bias-variance-tradeoff/" data-tooltip="ML Summary Series (2) - Bias-Variance Tradeoff">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                   <i class="fa fa-angle-right"></i>
@@ -437,25 +327,25 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2019/05/ml-summary-series-1---concepts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2019/05/ml-summary-series-1---concepts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/05/ml-summary-series-1---concepts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/05/ml-summary-series-1---concepts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
               <i class="fa fa-weixin"></i>
             </a>
           </li>
@@ -527,7 +417,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/05/ml-summary-series-1---concepts/" data-tooltip="ML Summary Series (1) - Concepts">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -535,7 +425,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/06/ml-summary-series-2---bias-variance-tradeoff/" data-tooltip="ML Summary Series (2) - Bias-Variance Tradeoff">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                   <i class="fa fa-angle-right"></i>
@@ -553,25 +443,25 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2019/05/ml-summary-series-1---concepts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2019/05/ml-summary-series-1---concepts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/05/ml-summary-series-1---concepts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/05/ml-summary-series-1---concepts/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
               <i class="fa fa-weixin"></i>
             </a>
           </li>
@@ -601,25 +491,25 @@
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2019%2F05%2Fml-summary-series-1---concepts%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2019%2F06%2Fml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2019%2F05%2Fml-summary-series-1---concepts%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2019%2F06%2Fml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2019%2F05%2Fml-summary-series-1---concepts%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2019%2F06%2Fml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2019%2F05%2Fml-summary-series-1---concepts%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2019%2F06%2Fml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics%2F">
           <i class="fa fa-weixin"></i><span>Share on WeChat</span>
         </a>
       </li>
@@ -674,8 +564,8 @@
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2019/06/ml-summary-series-2---bias-variance-tradeoff/">
-                <h3 class="media-heading">ML Summary Series (2) - Bias-Variance Tradeoff</h3>
+              <a class="link-unstyled" href="/2019/06/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics/">
+                <h3 class="media-heading">ML Summary Series (2) - Bias-variance tradeoff and learning theory basics</h3>
               </a>
               <span class="media-meta">
                 <span class="media-date text-small">
@@ -767,9 +657,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = '\/2019\/05\/ml-summary-series-1---concepts\/';
+          this.page.url = '\/2019\/06\/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics\/';
           
-            this.page.identifier = '\/2019\/05\/ml-summary-series-1---concepts\/'
+            this.page.identifier = '\/2019\/06\/ml-summary-series-2---bias-variance-tradeoff-and-learning-theory-basics\/'
           
         };
         (function() {
