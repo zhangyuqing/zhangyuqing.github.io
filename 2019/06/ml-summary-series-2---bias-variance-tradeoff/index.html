@@ -264,11 +264,12 @@
 <li><p>Variance (<span class="math inline">\(var(f(x&#39;) - \hat{f}(x&#39;))\)</span>) is the variance of random variable <span class="math inline">\(\hat{f}(x&#39;)\)</span>, over different possible training sets. In other words, if we obtain different training data from the pool with association <span class="math inline">\(f\)</span>, variance is how the model performance would change when training on the newly sampled dataset. If a model has high variance, it means that the model is learning the noise of the training data in addition to the true association.</p></li>
 </ul>
 <p>The two kinds of model behaviors corresponding to bias and variance are therefore called “under-fitting” and “over-fitting”, respectively. We would then be able to take action with regard to each model behavior. If a model is under-fitting, i.e. it is not learning a decent approximation of the true association, we can typically observe poor prediction performance even on training data. Then we need to increase the complexity of the model, like by including more features, so that it better captures the underlying association. If a model is over-fitting, it is fitting too much to the training data and even learning the noise. The model will have great accuracy in training, but on data not used in training, it will have poor performance. We then need to decrease model complexity. The last term in the decomposition, <span class="math inline">\(\sigma^2\)</span> is the noise in the test data, which there is nothing we can do with. It describes an upper bound of prediction power a model can achieve for this test set.</p>
+<p>Finally, we explained the concepts of bias and variance, but have not yet mentioned their trade-off. The mathematical details here are more complicated and depend on assumptions of the models used. So we will not dive in further. But it is worth mentioning that in general, an increase in bias will lead to a decrease in variance, and vice versa.</p>
 <p>I would close this post with a summary:</p>
 <ul>
 <li>Assumptions for data in supervised learning: training and test data are i.i.d.</li>
 <li>Generalization error: prediction error of trained model on unseen data</li>
-<li>Bias and variance: two aspects of generalization error:</li>
+<li>Bias and variance: two aspects of generalization error, generally move in opposite directions:</li>
 </ul>
 <table>
 <colgroup>
