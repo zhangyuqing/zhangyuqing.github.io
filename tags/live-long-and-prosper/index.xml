@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Stars &amp; Sea</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Stars &amp; Sea</description>
+    <title>Live Long and Prosper on Stars &amp; Sea</title>
+    <link>/tags/live-long-and-prosper/</link>
+    <description>Recent content in Live Long and Prosper on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/live-long-and-prosper/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,24 +24,6 @@
 读博这几年，我不常去开会，总觉得还没做出成果，去会上演讲也没什么底气。这两次去了才意识到，开会虽然有展示自己学术成果的成分，但 networking 更重要。去和人交谈，了解别人在做的事，有益于更好地反思和矫正自己在走的路。尤其对于像我这样一个不务正业，总是被其他领域的“绿草” (the grass is greener on the other side) 吸引的博士生，去开会很有好处。像是在 SDSS 上，我就听到了许多关于业界 production machine learning 的内容，包括 Kubeflow, TFX Tensorflow，和 H2O。后来还幸运地以此为契机，邀请到 H2O.ai 的 Dr. Erin LeDell 来大树做讲座。在 JSM 上听到的讲座更是有意思，从严谨的方法创新（连续时间MCMC及其在贝叶斯推断中的应用），到用经典方法处理新问题（用PageRank算法分析Reddit网络数据找高分播主），内容五花八门。
 参加这些讲座，也不是说听过就真能学会新知识。只是我明显感觉到自己的技能与社会需求的差距，因而产生了强大的危机感。有个关于 PhD 的 段子，大意是说博士越读知识面会越窄，直到最后，达到 “know everything about nothing” 的境地。这本无可厚非——毕竟博士训练的目的就是培养精通某一领域的专才。然而从个人发展的角度，过于专注自己的研究领域而忽略周围的环境不太好，容易让人失了定位。
 学术界的革新可以发生得很快。比如去年声称横扫自然语言处理各项任务的 BERT ，仅这个夏天短短几个月，就先被 XLNet 超越，后者又在一个半月内被百度 ERNIE 2.0 超越。在我熟悉的生信领域也是如此，近一年时间，不断有人在提出处理单细胞测序中批效应 (batch effect) 的新模型。然而业界对学界的新成果很慢热。一方面是因为学界臭名昭著的可重复性问题。另一方面，业界有着和学界不同的思维方式和价值观。比起使用一个高大上的模型，用最简单直接的办法达到效果，在工业界会更受赏识。从另一个角度，除了直接对口的岗位，业界使用的很多技术也很难在读博的过程中学到或用到。都是数据分析，我们用的基因组数据和 EHR 或者图像数据，区别就很大，需要不同的知识框架来处理。对于刚入职场的菜鸟（或者像我这种即将入职场的准菜鸟），这些差距确实让人很无奈。</description>
-    </item>
-    
-    <item>
-      <title>ML Summary Series (2) - Bias-Variance Tradeoff</title>
-      <link>/2019/06/ml-summary-series-2---bias-variance-tradeoff/</link>
-      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/06/ml-summary-series-2---bias-variance-tradeoff/</guid>
-      <description>We are all familiar with the workflow of supervised learning: fit models on training data, and make predictions on the test set. But why should performance of models in the training set tell us anything about that in the test set? Is model performance always generalizable to new data? Learning theory aims to address these questions under a general, abstract formulation of the supervised learning problem, without specifying details like the type of model or the source of data.</description>
-    </item>
-    
-    <item>
-      <title>ML Summary Series (1) - Concepts</title>
-      <link>/2019/05/ml-summary-series-1---concepts/</link>
-      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/05/ml-summary-series-1---concepts/</guid>
-      <description>Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.</description>
     </item>
     
   </channel>

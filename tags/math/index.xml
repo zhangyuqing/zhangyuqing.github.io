@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on Stars &amp; Sea</title>
+    <link>/tags/math/</link>
+    <description>Recent content in Math on Stars &amp; Sea</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>More thoughts on L1 and L2 norms...</title>
+      <link>/2019/07/more-thoughts-on-l1-and-l2-norms.../</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/more-thoughts-on-l1-and-l2-norms.../</guid>
+      <description>Summary  L1  In the first post of my machine learning summaries, I talked about L1 and L2 norms in the context of regularization.
+ </description>
+    </item>
+    
+  </channel>
+</rss>
