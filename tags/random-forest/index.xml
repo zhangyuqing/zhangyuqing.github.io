@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Stars &amp; Sea</title>
-    <link>/categories/projects/</link>
-    <description>Recent content in Projects on Stars &amp; Sea</description>
+    <title>Random Forest on Stars &amp; Sea</title>
+    <link>/tags/random-forest/</link>
+    <description>Recent content in Random Forest on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/random-forest/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,18 +18,6 @@
       
       <guid>/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/</guid>
       <description>Introduction Analyzing User Behavior in E-commerce E-commerce, the activity of buying and selling products online, is one of the many fields revolutionized by data science. One of the essential goals for e-commerce companies is to increase purchase conversion rates, i.e. the percentage of website visiters who complete the purchase at online stores. To achieve this goal, e-commerce companies as well as researchers in academia have devoted efforts in analyzing and modeling the behaviors of webpage users.</description>
-    </item>
-    
-    <item>
-      <title>Lung Cancer Detection from CT Scan Images Using DCNNs</title>
-      <link>/2019/09/lung-cancer-detection-from-ct-scan-images-using-dcnns/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/09/lung-cancer-detection-from-ct-scan-images-using-dcnns/</guid>
-      <description>Poster
-Report
-Code on GitHub Repository
-About the Project: Kaggle Data Science Bowl 2017</description>
     </item>
     
   </channel>

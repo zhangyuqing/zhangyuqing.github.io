@@ -30,6 +30,24 @@
     </item>
     
     <item>
+      <title>E Commerce</title>
+      <link>/tags/e-commerce/</link>
+      <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/e-commerce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>H2o</title>
+      <link>/tags/h2o/</link>
+      <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/h2o/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Healthcare</title>
       <link>/tags/healthcare/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
@@ -39,11 +57,11 @@
     </item>
     
     <item>
-      <title>Image</title>
-      <link>/tags/image/</link>
+      <title>Imaging Data</title>
+      <link>/tags/imaging-data/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/image/</guid>
+      <guid>/tags/imaging-data/</guid>
       <description></description>
     </item>
     
@@ -59,9 +77,18 @@
     <item>
       <title>Machine Learning</title>
       <link>/tags/machine-learning/</link>
-      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random Forest</title>
+      <link>/tags/random-forest/</link>
+      <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/random-forest/</guid>
       <description></description>
     </item>
     

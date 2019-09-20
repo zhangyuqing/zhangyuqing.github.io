@@ -6,17 +6,26 @@
     <description>Recent content in Posts on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Lung Cancer Detection from CT Scan Images Using Deep Convolutional Neural Networks</title>
-      <link>/2019/09/lung-cancer-detection-from-ct-scan-images-using-deep-convolutional-neural-networks/</link>
+      <title>Predicting Online Shoppers Purchasing Intention with H2O </title>
+      <link>/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/</link>
+      <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/</guid>
+      <description>Introduction Analyzing User Behavior in E-commerce E-commerce, the activity of buying and selling products online, is one of the many fields revolutionized by data science. One of the essential goals for e-commerce companies is to increase purchase conversion rates, i.e. the percentage of website visiters who complete the purchase at online stores. To achieve this goal, e-commerce companies as well as researchers in academia have devoted efforts in analyzing and modeling the behaviors of webpage users.</description>
+    </item>
+    
+    <item>
+      <title>Lung Cancer Detection from CT Scan Images Using DCNNs</title>
+      <link>/2019/09/lung-cancer-detection-from-ct-scan-images-using-dcnns/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/09/lung-cancer-detection-from-ct-scan-images-using-deep-convolutional-neural-networks/</guid>
+      <guid>/2019/09/lung-cancer-detection-from-ct-scan-images-using-dcnns/</guid>
       <description>Poster
 Report
 Code on GitHub Repository
@@ -54,15 +63,6 @@ About the Project: Kaggle Data Science Bowl 2017</description>
       
       <guid>/2019/05/ml-summary-series-1---concepts/</guid>
       <description>Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.</description>
-    </item>
-    
-    <item>
-      <title>Predicting Online Shoppers Purchasing Intention with H2O </title>
-      <link>/1/01/predicting-online-shoppers-purchasing-intention-with-h2o/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/predicting-online-shoppers-purchasing-intention-with-h2o/</guid>
-      <description>Introduction Analyzing User Behavior in E-commerce E-commerce, the activity of buying and selling products online, is one of the many fields revolutionized by data science. One of the essential goals for e-commerce companies is to increase purchase conversion rates, i.e. the percentage of website visiters who complete the purchase at online stores. To achieve this goal, e-commerce companies as well as researchers in academia have devoted efforts in analyzing and modeling the behaviors of webpage users.</description>
     </item>
     
   </channel>
