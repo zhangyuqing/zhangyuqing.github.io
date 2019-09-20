@@ -13,6 +13,16 @@
   </url>
   
   <url>
+    <loc>/projects/</loc>
+    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publications/</loc>
+    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/personal/</loc>
     <lastmod>2019-08-04T00:00:00+00:00</lastmod>
   </url>
@@ -35,16 +45,6 @@
   <url>
     <loc>/home/</loc>
     <lastmod>2019-04-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/projects/</loc>
-    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publications/</loc>
-    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
