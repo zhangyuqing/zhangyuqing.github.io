@@ -14,7 +14,6 @@ The latest list can be found on my [Google Scholar](https://scholar.google.com/c
 #### 2019
 
 + McQuerry, J.A., Jenkins, D.F., Yost, S.E., **Zhang, Y.**, Schmolze, D., Johnson, W.E., Yuan, Y. and Bild, A.H., (2019). Pathway activity profiling of growth factor receptor network and stemness pathways differentiates metaplastic breast cancer histological subtypes. *BMC cancer*
-
 + **Zhang, Y.**, Johnson, W. E., & Parmigiani, G. (2019). Robustifying genomic classifiers to batch effects via ensemble learning. *bioRxiv*
 
 #### 2018
