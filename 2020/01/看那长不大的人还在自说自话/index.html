@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.49.1 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Yuqing">
+<meta name="keywords" content="">
+<meta name="description" content="在 2019 的年初和年末，我在想同一个念头。
+这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶，航帮我给老旧的 win7 电脑安装 ubuntu 系统，我就看着他。想着可以一辈子停在那样的日子。
+后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。所以说 2020 要立什么 flag，我提不起兴致。
+19 年的 resolution 我倒是记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。
+我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了，改变不了就装，装不动了就逃，最后只是在这样的怪圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。
+烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我不该装。装得不好。对不起。
+新的一年要说有什么真想要的，我希望年底想的念头能换一个。大概率我做不到不丧，但把负值拉回零的修行不会断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再用很慢很慢的速度去追。如果幸运的话，希望能找回来一些。
+谢谢家人。谢谢还在的人。">
+
+
+<meta property="og:description" content="在 2019 的年初和年末，我在想同一个念头。
+这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶，航帮我给老旧的 win7 电脑安装 ubuntu 系统，我就看着他。想着可以一辈子停在那样的日子。
+后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。所以说 2020 要立什么 flag，我提不起兴致。
+19 年的 resolution 我倒是记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。
+我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了，改变不了就装，装不动了就逃，最后只是在这样的怪圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。
+烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我不该装。装得不好。对不起。
+新的一年要说有什么真想要的，我希望年底想的念头能换一个。大概率我做不到不丧，但把负值拉回零的修行不会断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再用很慢很慢的速度去追。如果幸运的话，希望能找回来一些。
+谢谢家人。谢谢还在的人。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="看那长不大的人还在自说自话">
+<meta name="twitter:title" content="看那长不大的人还在自说自话">
+<meta property="og:url" content="/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+<meta property="twitter:url" content="/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+<meta property="og:site_name" content="Stars &amp; Sea">
+<meta property="og:description" content="在 2019 的年初和年末，我在想同一个念头。
+这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶，航帮我给老旧的 win7 电脑安装 ubuntu 系统，我就看着他。想着可以一辈子停在那样的日子。
+后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。所以说 2020 要立什么 flag，我提不起兴致。
+19 年的 resolution 我倒是记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。
+我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了，改变不了就装，装不动了就逃，最后只是在这样的怪圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。
+烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我不该装。装得不好。对不起。
+新的一年要说有什么真想要的，我希望年底想的念头能换一个。大概率我做不到不丧，但把负值拉回零的修行不会断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再用很慢很慢的速度去追。如果幸运的话，希望能找回来一些。
+谢谢家人。谢谢还在的人。">
+<meta name="twitter:description" content="在 2019 的年初和年末，我在想同一个念头。
+这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶，航帮我给老旧的 win7 电脑安装 ubuntu 系统，我就看着他。想着可以一辈子停在那样的日子。
+后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。所以说 2020 要立什么 flag，我提不起兴致。
+19 年的 resolution 我倒是记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。
+我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了，改变不了就装，装不动了就逃，最后只是在这样的怪圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。
+烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我不该装。装得不好。对不起。
+新的一年要说有什么真想要的，我希望年底想的念头能换一个。大概率我做不到不丧，但把负值拉回零的修行不会断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再用很慢很慢的速度去追。如果幸运的话，希望能找回来一些。
+谢谢家人。谢谢还在的人。">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-01-01T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2020-01-01T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Random thoughts">
+    
+  
+  
+    
+      <meta property="article:tag" content="Relationship">
+    
+      <meta property="article:tag" content="中文">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="/personal_files/profile.jpg">
+  <meta property="twitter:image" content="/personal_files/profile.jpg">
+
+
+    <title>看那长不大的人还在自说自话</title>
+
+    <link rel="icon" href="/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-ghokqi7s7hdo9hisbdrskvy84wnaw5cskdnpd4vwowlvtuiy1ejozrtvpzds.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/">Stars &amp; Sea</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://zhangyuqing.github.io/">
+    
+    
+    
+      
+        <img class="header-picture" src="/personal_files/profile.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      
+        <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="/#about">
+          <img class="sidebar-profile-picture" src="/personal_files/profile.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Yuqing</h4>
+        
+          <h5 class="sidebar-profile-bio">PhD Candidate in Bioinformatics</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/zhangyuqing">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/yuqing-zhang-272612a4">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://scholar.google.com/citations?user=lE6puDgAAAAJ&amp;hl=en&amp;authuser=1">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-graduation-cap"></i>
+      
+      <span class="sidebar-button-desc">Google Scholar</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+      
+
+      <div id="main" data-behavior="5"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      看那长不大的人还在自说自话
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-01-01T00:00:00Z">
+        
+  January 1, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="/categories/random-thoughts">Random thoughts</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>在 2019 的年初和年末，我在想同一个念头。</p>
+<p>这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶，航帮我给老旧的 win7 电脑安装 ubuntu 系统，我就看着他。想着可以一辈子停在那样的日子。</p>
+<p>后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。所以说 2020 要立什么 flag，我提不起兴致。</p>
+<p>19 年的 resolution 我倒是记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。</p>
+<p>我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了，改变不了就装，装不动了就逃，最后只是在这样的怪圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。</p>
+<p>烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我不该装。装得不好。对不起。</p>
+<p>新的一年要说有什么真想要的，我希望年底想的念头能换一个。大概率我做不到不丧，但把负值拉回零的修行不会断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再用很慢很慢的速度去追。如果幸运的话，希望能找回来一些。</p>
+<p>谢谢家人。谢谢还在的人。</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/tags/relationship/">Relationship</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/%E4%B8%AD%E6%96%87/">中文</a>
+
+                  </div>
+                
+              
+            
+            
+              <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/" data-tooltip="Predicting Online Shoppers Purchasing Intention with H2O ">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+              
+                
+                  <div id="disqus_thread">
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://zhangyuqing-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+                
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Yuqing. All Rights Reserved
+  </span>
+</footer>
+
+
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    
+    
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/" data-tooltip="Predicting Online Shoppers Purchasing Intention with H2O ">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2020%2F01%2F%25E7%259C%258B%25E9%2582%25A3%25E9%2595%25BF%25E4%25B8%258D%25E5%25A4%25A7%25E7%259A%2584%25E4%25BA%25BA%25E8%25BF%2598%25E5%259C%25A8%25E8%2587%25AA%25E8%25AF%25B4%25E8%2587%25AA%25E8%25AF%259D%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2020%2F01%2F%25E7%259C%258B%25E9%2582%25A3%25E9%2595%25BF%25E4%25B8%258D%25E5%25A4%25A7%25E7%259A%2584%25E4%25BA%25BA%25E8%25BF%2598%25E5%259C%25A8%25E8%2587%25AA%25E8%25AF%25B4%25E8%2587%25AA%25E8%25AF%259D%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2020%2F01%2F%25E7%259C%258B%25E9%2582%25A3%25E9%2595%25BF%25E4%25B8%258D%25E5%25A4%25A7%25E7%259A%2584%25E4%25BA%25BA%25E8%25BF%2598%25E5%259C%25A8%25E8%2587%25AA%25E8%25AF%25B4%25E8%2587%25AA%25E8%25AF%259D%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2020%2F01%2F%25E7%259C%258B%25E9%2582%25A3%25E9%2595%25BF%25E4%25B8%258D%25E5%25A4%25A7%25E7%259A%2584%25E4%25BA%25BA%25E8%25BF%2598%25E5%259C%25A8%25E8%2587%25AA%25E8%25AF%25B4%25E8%2587%25AA%25E8%25AF%259D%2F">
+          <i class="fa fa-weixin"></i><span>Share on WeChat</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="/personal_files/profile.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Yuqing</h4>
+    
+      <div id="about-card-bio">PhD Candidate in Bioinformatics</div>
+    
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Boston &amp; SF Bay Area
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D/">
+                <h3 class="media-heading">看那长不大的人还在自说自话</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2020
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">在 2019 的年初和年末，我在想同一个念头。
+这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶，航帮我给老旧的 win7 电脑安装 ubuntu 系统，我就看着他。想着可以一辈子停在那样的日子。
+后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。所以说 2020 要立什么 flag，我提不起兴致。
+19 年的 resolution 我倒是记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。
+我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了，改变不了就装，装不动了就逃，最后只是在这样的怪圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。
+烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我不该装。装得不好。对不起。
+新的一年要说有什么真想要的，我希望年底想的念头能换一个。大概率我做不到不丧，但把负值拉回零的修行不会断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再用很慢很慢的速度去追。如果幸运的话，希望能找回来一些。
+谢谢家人。谢谢还在的人。</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+                <h3 class="media-heading">Predicting Online Shoppers Purchasing Intention with H2O </h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Sep 9, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Introduction Analyzing User Behavior in E-commerce E-commerce, the activity of buying and selling products online, is one of the many fields revolutionized by data science. One of the essential goals for e-commerce companies is to increase purchase conversion rates, i.e. the percentage of website visiters who complete the purchase at online stores. To achieve this goal, e-commerce companies as well as researchers in academia have devoted efforts in analyzing and modeling the behaviors of webpage users.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2019/09/lung-cancer-detection-from-ct-scan-images-using-dcnns/">
+                <h3 class="media-heading">Lung Cancer Detection from CT Scan Images Using DCNNs</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Sep 9, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Poster
+Report
+Code on GitHub Repository
+About the Project: Kaggle Data Science Bowl 2017</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2019/08/%E5%BC%80%E4%BC%9A%E9%9A%8F%E6%84%9F/">
+                <h3 class="media-heading">开会随感</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">JSM memory
+  前几天在 JSM 有幸听了 RStudio 谢益辉的讲座，并攀谈了几句。益辉大神听说我在用 blogdown，就说，希望我把自己的主页和博客坚持更新下去。他说这话的时候，我因为各种原因已经把最新一篇博客拖了两个月，有点心虚。说实话，我不擅长写作。早在高中的时候，我的作文就总被语文老师吐槽中心思想不明确。那时我比现在更多思多虑，有很多想表达的东西，奈何语言和逻辑水平不过关，很多纠缠在一起没理清楚的思绪就挤在一篇文章里，一股脑发泄出来。我没想明白要说什么，读者看了估计也觉得云里雾里。后来大学学了数学，整天在定义和符号里转圈，就更是把语文还给老师了。按说我不该再有兴致写东西了（一些中学的老友可能还记得我的老博客）。然而技术对人的影响就是很神奇。偏偏在放弃写作多年后，我偶然了解到益辉开发的 blogdown 。于是就这样，在强化自己敲代码水平的过程中，又重新有了写点什么的念头。
+扯远了。刚才说把最新一篇博客拖了两个月，是因为这两个月来我在马不停蹄的做事。之前在做的研究项目都接近收尾，有一个最近已经成稿放到了 bioRxiv上， 另一个项目的文章也正在写。此外，我应朋友邀请，给大数 NGO 做了志愿者，写了有生以来第一篇微信公众号文章。再有就是去开了两次会，一次是五月底在华盛顿州贝尔维尤的 SDSS，另一次就是刚刚过去，在科罗拉多丹佛市的 JSM。总的来看，这个夏天我过得很充实，虽然和计划有出入，但也算做成了一些事情。
+两次去开会的经历最让我有感触。
+读博这几年，我不常去开会，总觉得还没做出成果，去会上演讲也没什么底气。这两次去了才意识到，开会虽然有展示自己学术成果的成分，但 networking 更重要。去和人交谈，了解别人在做的事，有益于更好地反思和矫正自己在走的路。尤其对于像我这样一个不务正业，总是被其他领域的“绿草” (the grass is greener on the other side) 吸引的博士生，去开会很有好处。像是在 SDSS 上，我就听到了许多关于业界 production machine learning 的内容，包括 Kubeflow, TFX Tensorflow，和 H2O。后来还幸运地以此为契机，邀请到 H2O.ai 的 Dr. Erin LeDell 来大数做讲座。在 JSM 上听到的讲座更是有意思，从严谨的方法创新（连续时间 MCMC 及其在贝叶斯推断中的应用），到用经典方法处理新问题（用 PageRank 算法分析 Reddit 网络数据找高分播主），内容五花八门。
+参加这些讲座，也不是说听过就真能学会新知识。只是我明显感觉到自己的技能与社会需求的差距，因而产生了强烈的危机感。有个关于 PhD 的段子，大意是说博士越读知识面会越窄，直到最后，达到 “know everything about nothing” 的境地。这本无可厚非——毕竟博士训练的目的就是培养精通某一领域的专才。然而从个人发展的角度，过于专注自己的研究领域而忽略周围的环境不太好，容易让人失了定位。
+学术界的革新可以发生得很快。比如去年声称横扫自然语言处理各项任务的 BERT ，仅这个夏天短短几个月，就先被 XLNet 超越，后者又在一个半月内被百度 ERNIE 2.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2019/06/ml-summary-series-2---bias-variance-tradeoff/">
+                <h3 class="media-heading">ML Summary Series (2) - Bias-Variance Tradeoff</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jun 6, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">We are all familiar with the workflow of supervised learning: fit models on training data, and make predictions on the test set. But why should performance of models in the training set tell us anything about that in the test set? Is model performance always generalizable to new data? Learning theory aims to address these questions under a general, abstract formulation of the supervised learning problem, without specifying details like the type of model or the source of data.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2019/05/ml-summary-series-1---concepts/">
+                <h3 class="media-heading">ML Summary Series (1) - Concepts</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Machine learning (ML) is by no means new to me. I took ML courses in college and in grad school. In college, I was also in a study group where we went through Bishop’s PRML chapter by chapter. Later when I became a PhD, I use machine learning in plenty of projects, from the visualization of data after dimensional reduction through PCA, to building prediction models with logistic regression, random forest, support vector machines, etc.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         6 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('/images/cover.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-p6llwctmalu8ncocgo5upocbylyeicglbexgxyreo826oslkc4fbyk7izxvf.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/2020\/01\/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D\/';
+          
+            this.page.identifier = '\/2020\/01\/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'zhangyuqing-github-io';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

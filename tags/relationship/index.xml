@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>中文 on Stars &amp; Sea</title>
-    <link>/tags/%E4%B8%AD%E6%96%87/</link>
-    <description>Recent content in 中文 on Stars &amp; Sea</description>
+    <title>Relationship on Stars &amp; Sea</title>
+    <link>/tags/relationship/</link>
+    <description>Recent content in Relationship on Stars &amp; Sea</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/%E4%B8%AD%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/relationship/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,21 +25,6 @@
 烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我还是没能长大。我不该装。装得不好。对不起。
 虽然感觉一年没怎么过，时间是过去了的。我想换个 flag 来立。新的一年，我希望年底想的念头能换一个。大概率我做不到不丧，但把默认负值的心情拉回零的修行，每天都不要断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再慢慢追。如果幸运的话，希望能追回来一些。
 谢谢家人。谢谢还在的人。我爱你们。</description>
-    </item>
-    
-    <item>
-      <title>开会随感</title>
-      <link>/2019/08/%E5%BC%80%E4%BC%9A%E9%9A%8F%E6%84%9F/</link>
-      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/08/%E5%BC%80%E4%BC%9A%E9%9A%8F%E6%84%9F/</guid>
-      <description>JSM memory
-  前几天在 JSM 有幸听了 RStudio 谢益辉的讲座，并攀谈了几句。益辉大神听说我在用 blogdown，就说，希望我把自己的主页和博客坚持更新下去。他说这话的时候，我因为各种原因已经把最新一篇博客拖了两个月，有点心虚。说实话，我不擅长写作。早在高中的时候，我的作文就总被语文老师吐槽中心思想不明确。那时我比现在更多思多虑，有很多想表达的东西，奈何语言和逻辑水平不过关，很多纠缠在一起没理清楚的思绪就挤在一篇文章里，一股脑发泄出来。我没想明白要说什么，读者看了估计也觉得云里雾里。后来大学学了数学，整天在定义和符号里转圈，就更是把语文还给老师了。按说我不该再有兴致写东西了（一些中学的老友可能还记得我的老博客）。然而技术对人的影响就是很神奇。偏偏在放弃写作多年后，我偶然了解到益辉开发的 blogdown 。于是就这样，在强化自己敲代码水平的过程中，又重新有了写点什么的念头。
-扯远了。刚才说把最新一篇博客拖了两个月，是因为这两个月来我在马不停蹄的做事。之前在做的研究项目都接近收尾，有一个最近已经成稿放到了 bioRxiv上， 另一个项目的文章也正在写。此外，我应朋友邀请，给大数 NGO 做了志愿者，写了有生以来第一篇微信公众号文章。再有就是去开了两次会，一次是五月底在华盛顿州贝尔维尤的 SDSS，另一次就是刚刚过去，在科罗拉多丹佛市的 JSM。总的来看，这个夏天我过得很充实，虽然和计划有出入，但也算做成了一些事情。
-两次去开会的经历最让我有感触。
-读博这几年，我不常去开会，总觉得还没做出成果，去会上演讲也没什么底气。这两次去了才意识到，开会虽然有展示自己学术成果的成分，但 networking 更重要。去和人交谈，了解别人在做的事，有益于更好地反思和矫正自己在走的路。尤其对于像我这样一个不务正业，总是被其他领域的“绿草” (the grass is greener on the other side) 吸引的博士生，去开会很有好处。像是在 SDSS 上，我就听到了许多关于业界 production machine learning 的内容，包括 Kubeflow, TFX Tensorflow，和 H2O。后来还幸运地以此为契机，邀请到 H2O.ai 的 Dr. Erin LeDell 来大数做讲座。在 JSM 上听到的讲座更是有意思，从严谨的方法创新（连续时间 MCMC 及其在贝叶斯推断中的应用），到用经典方法处理新问题（用 PageRank 算法分析 Reddit 网络数据找高分播主），内容五花八门。
-参加这些讲座，也不是说听过就真能学会新知识。只是我明显感觉到自己的技能与社会需求的差距，因而产生了强烈的危机感。有个关于 PhD 的段子，大意是说博士越读知识面会越窄，直到最后，达到 “know everything about nothing” 的境地。这本无可厚非——毕竟博士训练的目的就是培养精通某一领域的专才。然而从个人发展的角度，过于专注自己的研究领域而忽略周围的环境不太好，容易让人失了定位。
-学术界的革新可以发生得很快。比如去年声称横扫自然语言处理各项任务的 BERT ，仅这个夏天短短几个月，就先被 XLNet 超越，后者又在一个半月内被百度 ERNIE 2.</description>
     </item>
     
   </channel>

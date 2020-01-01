@@ -8,41 +8,67 @@
 <meta name="generator" content="Hugo 0.49.1 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Yuqing">
 <meta name="keywords" content="">
-<meta name="description" content="Introduction Analyzing User Behavior in E-commerce E-commerce, the activity of buying and selling products online, is one of the many fields revolutionized by data science. One of the essential goals for e-commerce companies is to increase purchase conversion rates, i.e. the percentage of website visiters who complete the purchase at online stores. To achieve this goal, e-commerce companies as well as researchers in academia have devoted efforts in analyzing and modeling the behaviors of webpage users.">
+<meta name="description" content="在 2019 的年初和年末，我在想同一个念头。
+这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶。航帮我给老旧的 win7 电脑安装 ubuntu 系统。我看着他。
+后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。
+年初的 resolution 我还记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。
+我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了。改变不了就装，装不动了就逃，最后只是在这样的圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。
+烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我还是没能长大。我不该装。装得不好。对不起。
+虽然感觉一年没怎么过，时间是过去了的。我想换个 flag 来立。新的一年，我希望年底想的念头能换一个。大概率我做不到不丧，但把默认负值的心情拉回零的修行，每天都不要断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再慢慢追。如果幸运的话，希望能追回来一些。
+谢谢家人。谢谢还在的人。我爱你们。">
 
 
-<meta property="og:description" content="Introduction Analyzing User Behavior in E-commerce E-commerce, the activity of buying and selling products online, is one of the many fields revolutionized by data science. One of the essential goals for e-commerce companies is to increase purchase conversion rates, i.e. the percentage of website visiters who complete the purchase at online stores. To achieve this goal, e-commerce companies as well as researchers in academia have devoted efforts in analyzing and modeling the behaviors of webpage users.">
+<meta property="og:description" content="在 2019 的年初和年末，我在想同一个念头。
+这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶。航帮我给老旧的 win7 电脑安装 ubuntu 系统。我看着他。
+后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。
+年初的 resolution 我还记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。
+我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了。改变不了就装，装不动了就逃，最后只是在这样的圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。
+烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我还是没能长大。我不该装。装得不好。对不起。
+虽然感觉一年没怎么过，时间是过去了的。我想换个 flag 来立。新的一年，我希望年底想的念头能换一个。大概率我做不到不丧，但把默认负值的心情拉回零的修行，每天都不要断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再慢慢追。如果幸运的话，希望能追回来一些。
+谢谢家人。谢谢还在的人。我爱你们。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Predicting Online Shoppers Purchasing Intention with H2O ">
-<meta name="twitter:title" content="Predicting Online Shoppers Purchasing Intention with H2O ">
-<meta property="og:url" content="/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
-<meta property="twitter:url" content="/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+<meta property="og:title" content="看那长不大的人还在自说自话 (for 2020)">
+<meta name="twitter:title" content="看那长不大的人还在自说自话 (for 2020)">
+<meta property="og:url" content="/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
+<meta property="twitter:url" content="/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
 <meta property="og:site_name" content="Stars &amp; Sea">
-<meta property="og:description" content="Introduction Analyzing User Behavior in E-commerce E-commerce, the activity of buying and selling products online, is one of the many fields revolutionized by data science. One of the essential goals for e-commerce companies is to increase purchase conversion rates, i.e. the percentage of website visiters who complete the purchase at online stores. To achieve this goal, e-commerce companies as well as researchers in academia have devoted efforts in analyzing and modeling the behaviors of webpage users.">
-<meta name="twitter:description" content="Introduction Analyzing User Behavior in E-commerce E-commerce, the activity of buying and selling products online, is one of the many fields revolutionized by data science. One of the essential goals for e-commerce companies is to increase purchase conversion rates, i.e. the percentage of website visiters who complete the purchase at online stores. To achieve this goal, e-commerce companies as well as researchers in academia have devoted efforts in analyzing and modeling the behaviors of webpage users.">
+<meta property="og:description" content="在 2019 的年初和年末，我在想同一个念头。
+这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶。航帮我给老旧的 win7 电脑安装 ubuntu 系统。我看着他。
+后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。
+年初的 resolution 我还记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。
+我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了。改变不了就装，装不动了就逃，最后只是在这样的圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。
+烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我还是没能长大。我不该装。装得不好。对不起。
+虽然感觉一年没怎么过，时间是过去了的。我想换个 flag 来立。新的一年，我希望年底想的念头能换一个。大概率我做不到不丧，但把默认负值的心情拉回零的修行，每天都不要断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再慢慢追。如果幸运的话，希望能追回来一些。
+谢谢家人。谢谢还在的人。我爱你们。">
+<meta name="twitter:description" content="在 2019 的年初和年末，我在想同一个念头。
+这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶。航帮我给老旧的 win7 电脑安装 ubuntu 系统。我看着他。
+后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。
+年初的 resolution 我还记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。
+我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了。改变不了就装，装不动了就逃，最后只是在这样的圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。
+烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我还是没能长大。我不该装。装得不好。对不起。
+虽然感觉一年没怎么过，时间是过去了的。我想换个 flag 来立。新的一年，我希望年底想的念头能换一个。大概率我做不到不丧，但把默认负值的心情拉回零的修行，每天都不要断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再慢慢追。如果幸运的话，希望能追回来一些。
+谢谢家人。谢谢还在的人。我爱你们。">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-09-23T00:00:00">
+    <meta property="article:published_time" content="2020-01-01T00:00:00">
   
   
-    <meta property="article:modified_time" content="2019-09-23T00:00:00">
+    <meta property="article:modified_time" content="2020-01-01T00:00:00">
   
-  
-  
-    
-      <meta property="article:section" content="Projects">
-    
   
   
     
-      <meta property="article:tag" content="E-commerce">
+      <meta property="article:section" content="Random thoughts">
     
-      <meta property="article:tag" content="Machine learning">
+  
+  
     
-      <meta property="article:tag" content="Random forest">
+      <meta property="article:tag" content="Relationship">
     
-      <meta property="article:tag" content="H2O">
+      <meta property="article:tag" content="New year resolution">
+    
+      <meta property="article:tag" content="中文">
     
   
 
@@ -63,14 +89,14 @@
   <meta property="twitter:image" content="/personal_files/profile.jpg">
 
 
-    <title>Predicting Online Shoppers Purchasing Intention with H2O </title>
+    <title>看那长不大的人还在自说自话 (for 2020)</title>
 
     <link rel="icon" href="/favicon.png">
     
 
     
 
-    <link rel="canonical" href="/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+    <link rel="canonical" href="/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -222,15 +248,15 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Predicting Online Shoppers Purchasing Intention with H2O 
+      看那长不大的人还在自说自话 (for 2020)
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-09-23T00:00:00Z">
+      <time itemprop="datePublished" datetime="2020-01-01T00:00:00Z">
         
-  September 23, 2019
+  January 1, 2020
 
       </time>
     
@@ -239,7 +265,7 @@
   
     <span>in</span>
     
-      <a class="category-link" href="/categories/projects">Projects</a>
+      <a class="category-link" href="/categories/random-thoughts">Random thoughts</a>
     
   
 
@@ -249,24 +275,14 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <div id="introduction" class="section level2">
-<h2>Introduction</h2>
-<div id="analyzing-user-behavior-in-e-commerce" class="section level3">
-<h3>Analyzing User Behavior in E-commerce</h3>
-<p>E-commerce, the activity of buying and selling products online, is one of the many fields revolutionized by data science. One of the essential goals for e-commerce companies is to increase purchase conversion rates, i.e. the percentage of website visiters who complete the purchase at online stores. To achieve this goal, e-commerce companies as well as researchers in academia have devoted efforts in analyzing and modeling the behaviors of webpage users. Especially in recent year, there has been a trend in research to use machine learning methods to predict the behavior of users. Since</p>
-</div>
-<div id="h2o-mlai-platform-for-production-scale-machine-learning" class="section level3">
-<h3>H2O ML/AI Platform for Production-scale Machine Learning</h3>
-<p>I went to a talk in May at the Symposium of Data Science and Statistics (SDSS), an annual data science conference sponsored by ASA. The talk was given by Chief Machine Learning Scientist at H2O.ai, Dr. Erin LeDell, who mainly worked on developing the AutoML function on the H2O platform.</p>
-<p>As one of the major products of H2O.ai, H2O is an open-source platform which implements scalable machine learning algorithms, and is able to efficiently handle large volumes of data. The backend of H2O is written in Java, which makes it easy to deploy models to production. H2O has APIs in both R and Python, and is supported on popular cloud computing platforms including Amazon AWS, Microsoft Azure, and Google Cloud.</p>
-<p>I have heard of H2O before, and have always been interested. Back from the conference, I decided to use it to solve an interesting problem: to predict the purchasing intention of online shoppers, based on customer profiles and online session information data.</p>
-</div>
-</div>
-<div id="online-shoppers-purchasing-intention-dataset" class="section level2">
-<h2>Online Shoppers Purchasing Intention Dataset</h2>
-<p>This demo project is based on an Online Shoppers Purchasing Intention dataset on UCI Machine Learning Repository, which can be used to predict whether users will complete their transactions, a binary classification task. This dataset was first published in an article from 2018. In the article, the authors compared random forest, support vector machines, and multi-layer perceptrons on this data, and developed a prediction model using multi-layer perceptron with selected variables for predicting the purchasing intention of users. The model is able to help e-commerce businesses identify customers who are more likely to complete transactions, and adjust marketing strategies accordingly.</p>
-<p>The dataset consists of 12330 records, each containing metrics of web visits of a user within a one-year timeframe. 85.4% (10422) of the customers did not complete the transaction. Positive examples, i.e. those who completed transactions, only take up 15.5% (1908) of the dataset. There are both continuous and categorical features in the data. Continuous variables include the total number of visits and time spent in three types of websites. There is also the average Google Analytics web metrics for all the websites that the users visit. Categorical variables record the user profiles and session information, including the type of operation systems and browsers, time and locations of the visits, etc.</p>
-</div>
+              <p>在 2019 的年初和年末，我在想同一个念头。</p>
+<p>这几年感觉自己的记忆力变得越来越差。晚饭时和航说起之前的圣诞-元旦都是怎么过的，我能记起来的只有 4 年前，读博第一年的假期。那时我们在波士顿，刚下过的暴雪堆在窗外厚厚一层，静谧无声。我还住在和人合租的两室，室友不在，异地难以见面的我们难得有那么长的一个多月可以单独共处，好自在惬意。我们挤在那间小卧室里，喝着温暖的红色茶。航帮我给老旧的 win7 电脑安装 ubuntu 系统。我看着他。</p>
+<p>后面几年的元旦说也奇怪，好像没过一样，一点痕迹都没有。航倒是记得一清二楚，帮我一年一年梳理，我才慢慢想起曾经做过这样那样的事。可说起来却像是谈论别人的经历，没什么真实感。没有了回忆，时间的流逝就没了刻度，像是在一望无际的海洋上泛舟，时常会忘了自己在前进。</p>
+<p>年初的 resolution 我还记得，感谢朋友圈。我说希望每天都有一件想尝试的新事物。这一年下来，学化妆学滑雪学开车上课开会搬家找工作写论文，好像马不停蹄做了很多事，也算有了新的经历见了新的人。可是，我的心境却卡在一处。不论去哪里做什么，它动弹不得。年底最后一天，我在反刍和年初同一个念头。也不知道这样是不是可以笑着自嘲打脸了。</p>
+<p>我是个很无趣的人。我知道 try everything new 不是我真正想要的。它不过是人们对 “有趣” 的一种定义。而过去的一两年，我执着于给自己打造一个有趣的形象，因为渴望陪伴。直到现在我也不知道怎样能让他人和我相处，在一起能说什么做什么。我每天想的就只有工作，相比出去玩还是更喜欢宅在家，没爱好，看了书或者剧，也没有想和人分享的心得。我渴望陪伴，可要说和人在一起做什么让彼此舒服，我真说不出来。所以我想让自己有趣一点，想着这样是不是比较容易让人开心，是不是维持关系会轻松。可其实不会。当我想让自己有趣时，我其实是想成为不是自己的样子。那太难了。改变不了就装，装不动了就逃，最后只是在这样的圈里转。其实就算是有趣的人，也不是什么关系都维持得住。是我苛求。</p>
+<p>烦心事一旦涉及关系，我就长时间走不出来。这是我一贯的弱点了。搬来加州后的几个月，我选择了消失和逃避。朋友圈戒了。也设置了 screen time，一天里大半时间锁着微信。另一半时间我也不怎么看它。因为这段时间的人间蒸发，我大概说了很多再见，有声或无声。回想起来，我不能问心无愧的说我没做错事，也知道很多时候说的话做的事不妥帖得罪了人。可即使新的一年，我依旧不能把这些留在昨天，说明天就会好。我不好相处。我还是没能长大。我不该装。装得不好。对不起。</p>
+<p>虽然感觉一年没怎么过，时间是过去了的。我想换个 flag 来立。新的一年，我希望年底想的念头能换一个。大概率我做不到不丧，但把默认负值的心情拉回零的修行，每天都不要断。我想更适应新形成的人际观念。然后，这一年里光速失去的引以为傲的东西，再慢慢追。如果幸运的话，希望能追回来一些。</p>
+<p>谢谢家人。谢谢还在的人。我爱你们。</p>
 
               
             </div>
@@ -279,13 +295,11 @@
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="/tags/e-commerce/">E-commerce</a>
+  <a class="tag tag--primary tag--small" href="/tags/relationship/">Relationship</a>
 
-  <a class="tag tag--primary tag--small" href="/tags/machine-learning/">Machine learning</a>
+  <a class="tag tag--primary tag--small" href="/tags/new-year-resolution/">New year resolution</a>
 
-  <a class="tag tag--primary tag--small" href="/tags/random-forest/">Random forest</a>
-
-  <a class="tag tag--primary tag--small" href="/tags/h2o/">H2O</a>
+  <a class="tag tag--primary tag--small" href="/tags/%E4%B8%AD%E6%96%87/">中文</a>
 
                   </div>
                 
@@ -299,7 +313,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/09/lung-cancer-detection-from-ct-scan-images-using-dcnns/" data-tooltip="Lung Cancer Detection from CT Scan Images Using DCNNs">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/" data-tooltip="Predicting Online Shoppers Purchasing Intention with H2O ">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -307,7 +321,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/" data-tooltip="看那长不大的人还在自说自话 (for 2020)">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                   <i class="fa fa-angle-right"></i>
@@ -325,25 +339,25 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
               <i class="fa fa-weixin"></i>
             </a>
           </li>
@@ -423,7 +437,7 @@ s.setAttribute('data-timestamp', +new Date());
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/09/lung-cancer-detection-from-ct-scan-images-using-dcnns/" data-tooltip="Lung Cancer Detection from CT Scan Images Using DCNNs">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/" data-tooltip="Predicting Online Shoppers Purchasing Intention with H2O ">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -431,7 +445,7 @@ s.setAttribute('data-timestamp', +new Date());
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/" data-tooltip="看那长不大的人还在自说自话 (for 2020)">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                   <i class="fa fa-angle-right"></i>
@@ -449,25 +463,25 @@ s.setAttribute('data-timestamp', +new Date());
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2019/09/predicting-online-shoppers-purchasing-intention-with-h2o/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2020/01/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020/">
               <i class="fa fa-weixin"></i>
             </a>
           </li>
@@ -497,25 +511,25 @@ s.setAttribute('data-timestamp', +new Date());
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2019%2F09%2Fpredicting-online-shoppers-purchasing-intention-with-h2o%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2020%2F01%2F%25E7%259C%258B%25E9%2582%25A3%25E9%2595%25BF%25E4%25B8%258D%25E5%25A4%25A7%25E7%259A%2584%25E4%25BA%25BA%25E8%25BF%2598%25E5%259C%25A8%25E8%2587%25AA%25E8%25AF%25B4%25E8%2587%25AA%25E8%25AF%259D-for-2020%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2019%2F09%2Fpredicting-online-shoppers-purchasing-intention-with-h2o%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2020%2F01%2F%25E7%259C%258B%25E9%2582%25A3%25E9%2595%25BF%25E4%25B8%258D%25E5%25A4%25A7%25E7%259A%2584%25E4%25BA%25BA%25E8%25BF%2598%25E5%259C%25A8%25E8%2587%25AA%25E8%25AF%25B4%25E8%2587%25AA%25E8%25AF%259D-for-2020%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2019%2F09%2Fpredicting-online-shoppers-purchasing-intention-with-h2o%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2020%2F01%2F%25E7%259C%258B%25E9%2582%25A3%25E9%2595%25BF%25E4%25B8%258D%25E5%25A4%25A7%25E7%259A%2584%25E4%25BA%25BA%25E8%25BF%2598%25E5%259C%25A8%25E8%2587%25AA%25E8%25AF%25B4%25E8%2587%25AA%25E8%25AF%259D-for-2020%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2019%2F09%2Fpredicting-online-shoppers-purchasing-intention-with-h2o%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2020%2F01%2F%25E7%259C%258B%25E9%2582%25A3%25E9%2595%25BF%25E4%25B8%258D%25E5%25A4%25A7%25E7%259A%2584%25E4%25BA%25BA%25E8%25BF%2598%25E5%259C%25A8%25E8%2587%25AA%25E8%25AF%25B4%25E8%2587%25AA%25E8%25AF%259D-for-2020%2F">
           <i class="fa fa-weixin"></i><span>Share on WeChat</span>
         </a>
       </li>
@@ -747,9 +761,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = '\/2019\/09\/predicting-online-shoppers-purchasing-intention-with-h2o\/';
+          this.page.url = '\/2020\/01\/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020\/';
           
-            this.page.identifier = '\/2019\/09\/predicting-online-shoppers-purchasing-intention-with-h2o\/'
+            this.page.identifier = '\/2020\/01\/%E7%9C%8B%E9%82%A3%E9%95%BF%E4%B8%8D%E5%A4%A7%E7%9A%84%E4%BA%BA%E8%BF%98%E5%9C%A8%E8%87%AA%E8%AF%B4%E8%87%AA%E8%AF%9D-for-2020\/'
           
         };
         (function() {
